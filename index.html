@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -92,7 +93,7 @@
                         <span class="burger"></span>
                         <span>Каталог</span>
                     </button>
-                    <button class="right"></button>
+                    <button class="right-arrow-mobile"></button>
                 </div>
                 <nav class="nav">
                     <ul class="nav-inner">
@@ -100,31 +101,31 @@
                             <a href="#" class="nav-link">
                                 На заказ
                             </a>
-                            <button class="right"></button>
+                            <button class="right-arrow-mobile"></button>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 О нас
                             </a>
-                            <button class="right"></button>
+                            <button class="right-arrow-mobile"></button>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 Наши работы
                             </a>
-                            <button class="right"></button>
+                            <button class="right-arrow-mobile"></button>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 Сотрудничество
                             </a>
-                            <button class="right"></button>
+                            <button class="right-arrow-mobile"></button>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 Контакты
                             </a>
-                            <button class="right"></button>
+                            <button class="right-arrow-mobile"></button>
                         </li>
                     </ul>
                 </nav>
@@ -179,29 +180,58 @@
     <div class="container">
         <div class="main-wrapper">
             <div class="slider-wrapper">
-                <div class="slide-item">
-                    <div class="slide-content">
-                        <div class="top-pagination">
-                            <span class="all-items">1</span>
-                            <span class="active-item">3</span>
+                <div class="top-pagination swiper-pagination">
+                    <span class="all-items">1</span>
+                    <span class="active-item">3</span>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="slide-item swiper-slide">
+                        <div class="slide-content">
+                            <h1 class="slider-title">НАСТОЯЩИЙ ОГОНЬ БЕЗ ДЫМА, ГАРИ И ЗАПАХА</h1>
+                            <div class="main-slider-description">
+                                <p class="slider-descr-text">Устанавливается в любом помещении</p>
+                                <p class="slider-descr-text">Не требует дымохода или вытяжки</p>
+                                <p class="slider-descr-text">Дарит особое ощущение тепла и уюта</p>
+                            </div>
+                            <button class="slier-main-btn">
+                                <span>Подобрать биокамин</span>
+                            </button>
                         </div>
-                        <h1 class="slider-title">НАСТОЯЩИЙ ОГОНЬ БЕЗ ДЫМА, ГАРИ И ЗАПАХА</h1>
-                        <div class="main-slider-description">
-                            <p class="slider-descr-text">Устанавливается в любом помещении</p>
-                            <p class="slider-descr-text">Не требует дымохода или вытяжки</p>
-                            <p class="slider-descr-text">Дарит особое ощущение тепла и уюта</p>
-                        </div>
-                        <button class="slier-main-btn">
-                            <span>Подобрать биокамин</span>
-                        </button>
                     </div>
-                    <div class="main-slider-arrows">
-                        <button class="arrow-prew"></button>
-                        <button class="arrow-next"></button>
+                    <div class="slide-item swiper-slide">
+                        <div class="slide-content">
+                            <h1 class="slider-title">НАСТОЯЩИЙ ОГОНЬ БЕЗ ДЫМА, ГАРИ И ЗАПАХА</h1>
+                            <div class="main-slider-description">
+                                <p class="slider-descr-text">Устанавливается в любом помещении</p>
+                                <p class="slider-descr-text">Не требует дымохода или вытяжки</p>
+                                <p class="slider-descr-text">Дарит особое ощущение тепла и уюта</p>
+                            </div>
+                            <button class="slier-main-btn">
+                                <span>Подобрать биокамин</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slide-item swiper-slide">
+                        <div class="slide-content">
+                            <h1 class="slider-title">НАСТОЯЩИЙ ОГОНЬ БЕЗ ДЫМА, ГАРИ И ЗАПАХА</h1>
+                            <div class="main-slider-description">
+                                <p class="slider-descr-text">Устанавливается в любом помещении</p>
+                                <p class="slider-descr-text">Не требует дымохода или вытяжки</p>
+                                <p class="slider-descr-text">Дарит особое ощущение тепла и уюта</p>
+                            </div>
+                            <button class="slier-main-btn">
+                                <span>Подобрать биокамин</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="main-test">
+                <div class="main-slider-arrows">
+                    <button class="arrow-prew"></button>
+                    <button class="arrow-next"></button>
+                </div>
                 <div class="bg-wrapper">
                     <img src="images/main/bioflares.png" alt="test" class="test-img">
                 </div>
@@ -364,6 +394,7 @@
         </div>
     </div>
 </section>
+
 <!--<footer class="footer">-->
 <!--    <div class="container">-->
 <!--        <div class="footer-wrapper">-->
@@ -504,6 +535,7 @@
 <!--</footer>-->
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/slick.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 
