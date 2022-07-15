@@ -33,6 +33,13 @@ body {
     color: #1D1D1D;
 }
 
+.swiper-pagination-fraction {
+    width: 0!important;
+}
+
+ .swiper-progressbar-fill {
+    background-color: #FF5710;
+}
 .container {
     max-width: 1440px;
     margin-left: auto;
@@ -374,6 +381,34 @@ body {
     height: 48px;
 }
 
+.arrow-next-bioflares {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    background-image: url(../images/icons/right-arrow-bioflares.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 4px;
+}
+
+.arrow-prev-bioflares {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    background-image: url(../images/icons/left-arrow-bioflares.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 34px;
+}
+
+.arrow-disabled-bioflares {
+    background-color: #e5e5e5;
+    filter: grayscale(1);
+    margin-bottom: 4px;
+}
+
 .arrow-prew:hover,
 .arrow-next:hover {
     opacity: 0.8;
@@ -540,6 +575,7 @@ body {
 .nums-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nums-top {
@@ -659,7 +695,7 @@ body {
     top: -131px;
     content: '';
     width: 50vw;
-    height: 173%;
+    height: 190%;
     background-color: #1D1D1D;
 }
 
@@ -667,6 +703,10 @@ body {
     z-index: 1;
     padding: 154px 0 150px;
     background: #E5E5E5;
+}
+
+.bioflares-img {
+    width: 100%;
 }
 
 .bioflares-sliders-title {
@@ -679,30 +719,31 @@ body {
 }
 
 .bioflares-slider-wrap {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 8px;
 }
 
 .bioflares-sliders-inner {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .sliders-items-inner {
-    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 90%;
 }
 
 .bioflares-item {
     margin: 1px;
 }
 
-.bioflares-img {
-    width: 100%;
-}
-
 .bioflares-slider-arrows {
-    margin-left: 43px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
 }
 
 .decor-bottomline {
@@ -718,18 +759,21 @@ body {
 .bioflares-bottom-wrap {
     display: flex;
     align-items: center;
-    margin-top: 55px;
+    margin-top: 48px;
     margin-bottom: 74px;
     justify-content: end;
 }
 
-.bioflares-bottom-wrap::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: #D2D2D2;
-    flex-grow: 1;
+
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: calc(100% - 130px)!important;
+    height: 1px!important;
+    margin-top: 10px;
+    background-color: #D2D2D2;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background-color: #D2D2D2 !important;
 }
 
 .view-all-orange span {
@@ -740,8 +784,8 @@ body {
     color: #FF6610;
 }
 
-.bioflares-bottom-wrap {
-    width: 100%;
+.progress-bar {
+    display: block;
 }
 
 .footer {
@@ -864,6 +908,7 @@ body {
     }
     .nums-content-wrap {
         justify-content: flex-start;
+        height: auto;
     }
     .nums-inner {
         width: 60%;
@@ -884,6 +929,12 @@ body {
         line-height: 34px;
         color: white;
         margin-bottom: 14px;
+    }
+    .bioflares-sliders {
+        padding: 55px 10px 55px;
+    }
+    .bioflares-sliders-title {
+        font-size: 29px;
     }
 }
 
@@ -928,7 +979,7 @@ body {
         width: 80%;
     }
     .bioflares-sliders {
-        padding: 70px 10px 0px;
+        padding: 27px 10px 27px;
     }
     .bioflares-sliders-title {
         font-size: 30px;
@@ -949,7 +1000,7 @@ body {
 
 @media (max-width: 860px) {
     .main-wrapper {
-        padding: 24px 10px 24px;
+        padding: 27px 10px 27px;
         height: 440px;
     }
     .slide-content {
@@ -997,13 +1048,19 @@ body {
         width: 28px;
         height: 28px;
     }
-    .bottom-text-content {
-        font-size: 12px;
-    }
+
     .swiper-pagination,
     .all-items,
     .active-item {
         color: #fff;
+    }
+    .sliders-items-inner {
+        overflow: inherit;
+        width: 100%;
+    }
+
+    .bioflares-sliders-wrapper {
+        overflow: hidden;
     }
 }
 
@@ -1307,10 +1364,6 @@ body {
         line-height: 29px;
         margin-bottom: 13px;
     }
-    .bottom-text-content {
-        font-size: 11px;
-        line-height: 130%;
-    }
     .nums-top {
         padding-bottom: 0;
     }
@@ -1355,6 +1408,9 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
     }
+     .swiper-slide {
+        width: 95% !important;
+    }
     .slier-main-btn {
         width: 68%;
         padding: 14px;
@@ -1376,11 +1432,10 @@ body {
     .content-test-wrapper {
         height: 100%;
     }
-
-    .slider-wrapper {
-        overflow: inherit;
+    .top-pagination {
+        top: -70%;
+        margin-left: 28px;
     }
-
 
     .nums-wrapper {
         flex-direction: column;
@@ -1391,9 +1446,6 @@ body {
     }
     .nums-content-wrap {
         width: 100%;
-        justify-content: center;
-        align-items: center;
-        height: 360px;
     }
     .nums-content-wrap::after {
         position: absolute;
@@ -1402,20 +1454,30 @@ body {
         top: 0;
         content: '';
         width: 100vw;
-        height: 121%;
+        height: 180%;
+    }
+    .nums-content-text {
+        padding-top: 40px;
     }
     .nums-content-title {
         font-size: 22px;
         line-height: 30px;
-        margin-bottom: 13px;
+        margin-bottom: 20px;
     }
     .nums-content {
         font-size: 28px;
     }
+    .bottom-content {
+        margin-bottom: 12px;
+    }
     .nums-text {
         font-size: 12px;
     }
-    .sliders-items-inner {
-        display: flex;
+    .bioflares-sliders-title {
+        font-size: 22px;
     }
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background-color: #FF5710!important;
+    }
+
 }

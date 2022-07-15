@@ -12,8 +12,16 @@ $(".close-btn").on("click", function () {
 new Swiper(".slider-wrapper", {
     slidesPerView: 1,
     spaceBetween: 0,
+    breakpoints: {
+        0: {
+            slidesPerView: "auto",
+        },
+        550: {
+            slidesPerView: "auto",
+        }
+    },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".top-pagination ",
         type: "fraction",
         currentClass: "all-items",
         totalClass: "active-item",
@@ -23,12 +31,34 @@ new Swiper(".slider-wrapper", {
         prevEl: ".arrow-prew",
         disabledClass: "arrow-disabled"
     },
-    // breakpoints: {
-    //     slidesPerView: 1,
-    //     spaceBetween: 5,
-    //     550: {
-    //         slidesPerView: 1.05,
-    //         spaceBetween: 5,
-    //     }
-    // }
+
 });
+
+//слайдер на главной виды каминов
+
+new Swiper(".sliders-items-inner",{
+    slidesPerView: 3,
+    spaceBetween: 1,
+    breakpoints: {
+        360: {
+            slidesPerView: 1,
+        },
+        550: {
+            slidesPerView: 2,
+        },
+        860: {
+            slidesPerView: 3,
+        },
+    },
+    pagination: {
+        el: ".progress-bar",
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".arrow-next-bioflares",
+        prevEl: ".arrow-prev-bioflares",
+        disabledClass: "arrow-disabled-bioflares"
+    },
+
+})
+
