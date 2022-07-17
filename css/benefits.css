@@ -125,7 +125,7 @@
 
 @media (max-width: 960px){
     .benefits {
-        padding: 27px 10px 27px;
+        padding: 27px 10px 70px;
     }
 }
 
@@ -134,7 +134,7 @@
         padding: 42px;
         border-radius: 20px;
         border: 1px solid #FF7222;
-        height: 300px;
+        height: 270px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -189,12 +189,10 @@
 @media (max-width: 360px) {
     .benefits-item {
         padding: 35px;
+        height: 236px;
     }
     .benefits-bottom-wrapper {
         height: 132px;
-    }
-    .benefits-item {
-        padding: 37px;
     }
     .benefits-logo-bg {
         padding-top: 16px;
@@ -203,6 +201,7 @@
     .benefits-content {
         padding-top: 105px;
     }
-
-
+    .benefits-text {
+        font-size: 12px;
+    }
 }

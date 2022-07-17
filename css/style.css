@@ -1,6 +1,8 @@
 @import "fonts.css";
 @import "reset.css";
 @import "benefits.css";
+@import "video-rewiev.css";
+@import "bigDeco.css";
 
 *,
 *::before,
@@ -814,6 +816,9 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background-color: #FF5710!important;
+}
 
 @media (max-width: 1400px) {
     .nums-bottom::after {
@@ -1065,9 +1070,7 @@ body {
     .bioflares-slider-arrows {
         display: none;
     }
-    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-        background-color: #FF5710!important;
-    }
+
     .top-pagination {
         color: white;
     }

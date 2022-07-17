@@ -62,3 +62,27 @@ new Swiper(".sliders-items-inner",{
 
 })
 
+//слайдер на главной видеообзоры
+
+new Swiper(".video-review-slider", {
+    slidesPerView: 1,
+    spaceBetween: 12,
+    0: {
+        slidesPerView: 1,
+    },
+    760: {
+        slidesPerView: 2,
+    },
+    550: {
+        slidesPerView: 1,
+    },
+    pagination: {
+        el: ".progress-bar-video",
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".arrow-next-video",
+        prevEl: ".arrow-prev-video",
+        disabledClass: "arrow-video-disabled"
+    }
+})

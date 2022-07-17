@@ -1,0 +1,83 @@
+.bigDeco {
+    padding: 135px 0 214px;
+    background-color: #222222;
+}
+
+.bigDeco-wrapper {
+
+    display: grid;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(../images/main/bigDeco-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+
+
+.title-content {
+    max-width: 382px;
+}
+
+.title-title {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.title-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8A8B90;
+    margin-bottom: 46px;
+}
+
+.title-link-about {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.big-content {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 276px;
+    line-height: 48px;
+    color: white;
+    margin-top: 82px;
+}
+
+.big-content-bottom {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 217px;
+    line-height: 48px;
+    color: white;
+    padding-right: 97px;
+}
+
+.big-top {
+    display: flex;
+    align-items: baseline;
+    padding-left: 89px;
+}
+
+.big-bottom {
+    margin-top: 128px;
+    grid-area: -2 / 2 / -1 / -1;
+    display: flex;
+    flex-direction: column;
+    place-self: flex-end;
+}
+
+.big-content-text.bottom {
+    padding-top: 93px;
+}
