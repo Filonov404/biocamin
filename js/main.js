@@ -40,7 +40,7 @@ new Swiper(".sliders-items-inner",{
     slidesPerView: 3,
     spaceBetween: 1,
     breakpoints: {
-        360: {
+        0: {
             slidesPerView: 1,
         },
         550: {
