@@ -1,22 +1,29 @@
 .bigDeco {
-    padding: 135px 0 214px;
+    position: relative;
     background-color: #222222;
 }
 
-.bigDeco-wrapper {
-
-    display: grid;
-    grid-template-columns: 33% 66%;
-    grid-template-rows: repeat(2, 1fr);
+.bigDeco::after {
+    position: absolute;
+    content: '';
     background-image: url(../images/main/bigDeco-bg.png);
     background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
+    background-position: 100%;
+    background-size: contain;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
 }
 
-
+.bigDeco-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
 
 .title-content {
+    padding-top: 131px;
     max-width: 382px;
 }
 
@@ -54,30 +61,94 @@
     margin-top: 82px;
 }
 
+.big-item-wrap {
+    position: relative;
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    padding: 131px 0 231px;
+}
+
+.big-item-wrap::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    background-image: url(../images/main/bioflares2.png);
+    background-repeat: no-repeat;
+    background-position: 106px top;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
 .big-content-bottom {
+    align-self: end;
     font-family: 'Gotham';
     font-style: normal;
     font-weight: 700;
     font-size: 217px;
     line-height: 48px;
     color: white;
-    padding-right: 97px;
 }
 
 .big-top {
     display: flex;
     align-items: baseline;
     padding-left: 89px;
+    z-index: 2;
 }
 
 .big-bottom {
-    margin-top: 128px;
-    grid-area: -2 / 2 / -1 / -1;
+    margin-top: 209px;
     display: flex;
     flex-direction: column;
-    place-self: flex-end;
+    z-index: 2;
+    padding-right: 107px;
 }
 
 .big-content-text.bottom {
-    padding-top: 93px;
+    padding-top: 91px;
+    align-self: end;
+}
+
+.fire-content {
+    position: relative;
+    max-width: 589px;
+    display: flex;
+    background-color: #e5e5e5;
+    flex-direction: column;
+    padding: 149px 219px 121px 133px;
+}
+
+.fire-content::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/main/big-img2.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 112%;
+    height: 100%;
+    left: -112%;
+    bottom: 0;
+}
+
+.fire-text {
+    margin-bottom: 25px;
+}
+
+.deco-fire-bottom {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
+.fire-text-bottom {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
 }

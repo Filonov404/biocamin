@@ -36,7 +36,7 @@ new Swiper(".slider-wrapper", {
 
 //слайдер на главной виды каминов
 
-new Swiper(".sliders-items-inner",{
+new Swiper(".sliders-items-inner", {
     slidesPerView: 3,
     spaceBetween: 1,
     breakpoints: {
@@ -67,14 +67,11 @@ new Swiper(".sliders-items-inner",{
 new Swiper(".video-review-slider", {
     slidesPerView: 1,
     spaceBetween: 12,
-    0: {
-        slidesPerView: 1,
-    },
-    760: {
-        slidesPerView: 2,
-    },
-    550: {
-        slidesPerView: 1,
+    breakpoints: {
+
+        550: {
+            slidesPerView: 1,
+        },
     },
     pagination: {
         el: ".progress-bar-video",
