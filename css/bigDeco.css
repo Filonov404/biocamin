@@ -315,7 +315,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: 0 0 79px;
+        padding: 9px 0 45px;
     }
 
     .fire-text-bottom {
@@ -341,5 +341,9 @@
 
     .fire-text-bottom {
         font-size: 22px;
+    }
+    .big-item-wrap::after {
+        background-position: 185% top;
+        background-size: 85%;
     }
 }
