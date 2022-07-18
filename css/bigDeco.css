@@ -222,6 +222,7 @@
         left: 0;
         width: 100%;
     }
+
     .fire-text-bottom {
         display: block;
         text-align: center;
@@ -316,13 +317,16 @@
         flex-direction: column;
         padding: 0 0 79px;
     }
+
     .fire-text-bottom {
         font-size: 25px;
     }
+
     .fire-text {
         margin-bottom: 0;
         max-width: 110px;
     }
+
     .deco-logo {
         width: 100%;
     }
@@ -334,6 +338,7 @@
         flex-direction: unset;
         padding-right: 0;
     }
+
     .fire-text-bottom {
         font-size: 22px;
     }
