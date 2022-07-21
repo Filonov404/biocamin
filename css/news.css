@@ -1,0 +1,236 @@
+.news {
+    padding: 90px 10px 140px;
+    background-color: #222222;
+}
+
+.news-wrapper {
+    position: relative;
+}
+
+.news-wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.news-bottom-wrap {
+    position: absolute;
+    right: 15px;
+    top: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.news-title {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.view-all-dark {
+    background: transparent;
+    align-self: end;
+}
+
+.view-all-dark span {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #8B8B8B;
+}
+
+.news-item {
+    position: relative;
+    width: 479px !important;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 494px !important;
+    overflow: hidden;
+}
+
+.news-item::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/news-slider/news1.jpg);
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    filter: brightness(3) grayscale(1) contrast(1);
+}
+
+
+.news-item:hover {
+    position: relative;
+    background: #FF5710;
+    transition: all .3s ease;
+    filter: initial;
+}
+
+.news-item:hover::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/main/hoverImage.svg);
+    width: 75px;
+    height: 440px;
+    right: 0;
+    bottom: 0;
+    transition: all .3s ease;
+}
+
+.news-top-date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8A8B91;
+}
+
+.news-subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #232427;
+}
+
+.news-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    margin-top: 16px;
+    visibility: hidden;
+}
+
+.news-slider-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.news-bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(73%);
+    transition: all .3s;
+}
+
+.news-item:hover .news-bottom-wrapper {
+    transform: translateY(0);
+}
+
+.news-item:hover .news-text {
+    visibility: initial;
+}
+
+.news-item:hover .news-top-date {
+    color: #FFC786;
+}
+
+.news-item:hover .news-subtitle {
+    color: white;
+}
+
+.view-all-dark span:hover {
+    color: #FF5710;
+    transition: all .3s ease;
+}
+
+@media (max-width: 1200px) {
+    .news {
+        padding: 55px 10px 70px;
+        background-color: #222222;
+    }
+
+    .news-item {
+        width: 490px !important;
+        padding: 40px;
+        height: 400px !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .news {
+        padding: 27px 10px 50px;
+    }
+
+    .news-item {
+        width: 350px !important;
+        padding: 40px;
+        height: 325px !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .news-title {
+        font-size: 30px;
+    }
+
+    .news-bottom-wrapper {
+        transform: initial;
+    }
+
+    .news-text {
+        visibility: initial;
+        font-size: 12px;
+        color: #232427;
+    }
+
+    .swiper-slide:hover {
+        background: transparent;
+    }
+
+    .news-item:hover::after {
+        display: none;
+    }
+
+    .news-item:hover .news-top-date {
+        color: initial;
+    }
+
+    .news-item:hover .news-subtitle {
+        color: initial;
+    }
+
+    .news-bottom-wrapper {
+        transform: translateY(36%);
+    }
+
+    .news-title {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .news-item {
+        width: 265px !important;
+        padding: 40px;
+        height: 325px !important;
+    }
+
+    .news-subtitle {
+        font-size: 16px;
+    }
+
+    .view-all-dark span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #8B8B8B;
+    }
+
+    .news-bottom-wrap {
+        right: 11px;
+        bottom: 10px;
+    }
+}

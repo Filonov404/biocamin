@@ -113,11 +113,11 @@
 
 .fire-content {
     position: relative;
-    max-width: 589px;
+    max-width: 568px;
     display: flex;
     background-color: #e5e5e5;
     flex-direction: column;
-    padding: 149px 219px 121px 133px;
+    padding: 151px 219px 123px 133px;
     z-index: 2;
 }
 

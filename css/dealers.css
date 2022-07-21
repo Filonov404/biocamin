@@ -1,0 +1,155 @@
+.dealers {
+    background: #E5E5E5;
+    padding: 85px 10px 100px;
+}
+
+.dealers-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 39% 34%;
+}
+
+.dealers-designer,
+.be-a-dealer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 64px;
+    height: 433px;
+}
+
+.dealers-job-widthUS {
+    padding: 64px;
+    height: 433px;
+}
+
+.dealers-designer {
+    background-color: #f8f8f8;
+    border-radius: 10px 0 0 10px;
+}
+
+.dealers-title-black {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #232427;
+    margin-bottom: 24px;
+}
+
+.dealers-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.dealers-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8A8B91;
+}
+
+.dealers-job-widthUS {
+    background: #222222;
+}
+
+.be-a-dealer {
+    border-radius: 0 10px 10px 0;
+    background-color: #FF5710;
+}
+
+.be-dealers-btn {
+    padding: 20px 32px;
+    background: #fff;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.be-dealers-btn span {
+    color: #222222;
+}
+
+.dealers-designer-btn {
+    padding: 20px 23px;
+    background: #222222;
+    border-radius: 8px;
+    width: 63%;
+    margin-top: 46px;
+}
+
+.dealers-text-w {
+    color: white;
+}
+
+.dealers-text-decor {
+    width: 65%;
+}
+
+.text-decor-dealers {
+    padding-left: 10px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.decor-dealers {
+    margin-top: 5px;
+}
+
+.text-decor-wrap {
+    display: flex;
+    align-items: flex-start;
+}
+
+@media (max-width: 1200px) {
+    .dealers {
+        margin-top: 400px;
+    }
+    .dealers-designer,
+    .be-a-dealer,
+    .dealers-job-widthUS {
+    padding: 40px 32px;
+    }
+    .dealers-title {
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+    .text-decor-dealers {
+        font-size: 14px;
+    }
+
+    .dealers-title-black {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 960px) {
+    .dealers-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .be-a-dealer,
+    .dealers-job-widthUS,
+    .dealers-designer {
+        border-radius: 10px;
+    }
+    .dealers-designer,
+    .be-a-dealer {
+        height: 310px;
+    }
+    .dealers {
+        background: #E5E5E5;
+        padding: 27px 10px 27px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .dealers-designer, .be-a-dealer {
+        height: 348px;
+    }
+}

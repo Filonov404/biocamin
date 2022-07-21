@@ -3,6 +3,9 @@
 @import "benefits.css";
 @import "video-rewiev.css";
 @import "bigDeco.css";
+@import "dealers.css";
+@import "our-works.css";
+@import "news.css";
 
 *,
 *::before,
@@ -35,6 +38,11 @@ body {
     color: #1D1D1D;
 }
 
+.swiper-scrollbar-drag {
+    background: #FF5710!important;
+    height: 3px!important;
+}
+
 .swiper-pagination-fraction {
     width: 0!important;
 }
@@ -47,7 +55,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .header {
     padding: 34px 10px 34px;
@@ -1424,9 +1431,6 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-    }
-     .swiper-slide {
-        width: 95% !important;
     }
     .slier-main-btn {
         width: 68%;
