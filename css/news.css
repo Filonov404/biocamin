@@ -184,7 +184,7 @@
         color: #232427;
     }
 
-    .swiper-slide:hover {
+    .news-item.swiper-slide:hover {
         background: transparent;
     }
 

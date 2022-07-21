@@ -70,12 +70,25 @@
     color: #222222;
 }
 
+.be-dealers-btn:hover {
+    background-color: #222222;
+}
+
+.be-dealers-btn:hover span {
+    color: #ffffff;
+}
+
 .dealers-designer-btn {
     padding: 20px 23px;
     background: #222222;
     border-radius: 8px;
     width: 63%;
     margin-top: 46px;
+}
+
+.dealers-designer-btn:hover {
+    background-color: #FF5710;
+    transition: all .3s ease;
 }
 
 .dealers-text-w {

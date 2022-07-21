@@ -12,7 +12,7 @@ $(".close-btn").on("click", function () {
 new Swiper(".slider-wrapper", {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 1,
     breakpoints: {
         0: {
             slidesPerView: "auto",
@@ -52,9 +52,9 @@ new Swiper(".sliders-items-inner", {
             slidesPerView: 3,
         },
     },
-    pagination: {
+    scrollbar: {
         el: ".progress-bar",
-        type: "progressbar",
+        hide: false,
     },
     navigation: {
         nextEl: ".arrow-next-bioflares",
@@ -75,9 +75,9 @@ new Swiper(".video-review-slider", {
             slidesPerView: 1,
         },
     },
-    pagination: {
+    scrollbar: {
         el: ".progress-bar-video",
-        type: "progressbar",
+        hide: false,
     },
     navigation: {
         nextEl: ".arrow-next-video",
@@ -101,11 +101,6 @@ new Swiper(".our-works-slider", {
         prevEl: ".arrow-prev-video",
         disabledClass: "arrow-video-disabled"
     },
-    // on: {
-    //     realIndexChange: function () {
-    //         $(".our-works-content").fadeIn();
-    //     },
-    // }
 })
 
 const swiper = new Swiper(".news-slider-wrapper", {
