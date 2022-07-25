@@ -17,7 +17,7 @@
 .news-bottom-wrap {
     position: absolute;
     right: 15px;
-    top: 33px;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -143,6 +143,10 @@
     color: #FF5710;
     transition: all .3s ease;
 }
+.news-bottom-wrap.swiper {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 @media (max-width: 1200px) {
     .news {
@@ -208,7 +212,12 @@
         font-size: 22px;
         line-height: 24px;
     }
-
+    .view-all-dark span {
+        font-size: 12px;
+    }
+    .news-bottom-wrap {
+        top: 4px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -234,3 +243,4 @@
         bottom: 10px;
     }
 }
+

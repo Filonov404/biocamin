@@ -99,12 +99,6 @@
     filter: grayscale(1);
 }
 
-.progress-bar {
-    width: calc(100% - 120px);
-    height: 1px;
-    background-color: #ccc;
-}
-
 .progress-bar-video {
     width: calc(100% - 40px);
     height: 1px;

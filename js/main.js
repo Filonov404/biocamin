@@ -9,6 +9,7 @@ $(".close-btn").on("click", function () {
 });
 
 //Слайдер на глалвной
+
 new Swiper(".slider-wrapper", {
     loop: true,
     slidesPerView: 1,
@@ -19,10 +20,11 @@ new Swiper(".slider-wrapper", {
         },
         550: {
             slidesPerView: "auto",
+            freeMode: true,
         }
     },
     pagination: {
-        el: ".top-pagination ",
+        el: ".top-pagination",
         type: "fraction",
         currentClass: "all-items",
         totalClass: "active-item",
@@ -39,7 +41,7 @@ new Swiper(".slider-wrapper", {
 
 new Swiper(".sliders-items-inner", {
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: "auto",
     spaceBetween: 1,
     breakpoints: {
         0: {
@@ -47,6 +49,7 @@ new Swiper(".sliders-items-inner", {
         },
         550: {
             slidesPerView: 2,
+            freeMode: true,
         },
         860: {
             slidesPerView: 3,
@@ -70,11 +73,6 @@ new Swiper(".video-review-slider", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 12,
-    breakpoints: {
-        550: {
-            slidesPerView: 1,
-        },
-    },
     scrollbar: {
         el: ".progress-bar-video",
         hide: false,
@@ -86,24 +84,26 @@ new Swiper(".video-review-slider", {
     }
 })
 
+//слайдер на главной наши работы
 
 new Swiper(".our-works-slider", {
+    freeMode: true,
     slidesPerView: "auto",
     loop: true,
-    spaceBetween: 12,
+    spaceBetween: 35,
     slideActiveClass: 'activ-slide',
-    pagination: {
-        el: ".progress-bar-works",
-        type: "progressbar",
+    scrollbar: {
+        el: ".progress-bar-video",
     },
     navigation: {
         nextEl: ".arrow-next-video",
         prevEl: ".arrow-prev-video",
-        disabledClass: "arrow-video-disabled"
     },
 })
 
-const swiper = new Swiper(".news-slider-wrapper", {
+//слайдер на главной статьи
+
+new Swiper(".news-slider-wrapper", {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 1,
@@ -113,6 +113,9 @@ const swiper = new Swiper(".news-slider-wrapper", {
     },
 })
 
+//открыть закрыть меню в футере
 
-
-
+$(".footer-title").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("active");
+});

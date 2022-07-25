@@ -6,6 +6,8 @@
 @import "dealers.css";
 @import "our-works.css";
 @import "news.css";
+@import "breadcrumbs.css";
+@import "listing.css";
 
 *,
 *::before,
@@ -174,6 +176,20 @@ body {
 .social-link-header:hover svg {
     fill: #ffffff;
     transition: all .3s ease-in-out;
+}
+
+.social-link-footer:hover svg {
+    fill: #ffffff;
+    transition: all .3s ease-in-out;
+}
+
+.social-link-footer::after:hover {
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.social-link-footer {
+    position: relative;
 }
 
 .favourites {
@@ -485,8 +501,6 @@ body {
     margin-left: 70px;
     color: #2B2B2B;
 }
-
-
 
 
 .swiper-pagination {
@@ -871,21 +885,48 @@ body {
 }
 
 .footer {
-    padding: 64px 0 89px;
+    padding: 64px 10px 89px;
     background-color: #1D1D1D;
 }
 
-.footer-main-wrap {
+.footer-top {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #393939;
+    padding-bottom: 89px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0 36px;
+}
+
+.footer-politics {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #454545;
+    display: block;
+}
+
+.footer-politics:hover {
+    color: white;
+    transition: all .3s ease;
 }
 
 .footer-list-wrap {
     margin-right: 95px;
 }
 
-.catalog-wrap {
-    display: flex;
+@media (max-width: 550px) {
+    .footer-bottom {
+        flex-direction: column;
+    }
+    .footer-politics {
+        padding: 10px;
+    }
 }
 
 .footer-logo {
@@ -893,6 +934,146 @@ body {
 }
 
 .footer-social-wrap {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list-catalog1,
+.footer-list-catalog2 {
+    width: 192px;
+}
+
+.footer-list-byers {
+    padding-right: 43px;
+}
+
+.footer-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.footer-link-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8A8B91;
+}
+
+.footer-link-item:hover {
+    color: white;
+    transition: all .3s ease;
+}
+
+.footer-list-item {
+    margin-top: 12px;
+}
+
+.footer-logo {
+    margin-bottom: 29px;
+}
+
+.email {
+    margin-left: 21px;
+    margin-bottom: 19px;
+}
+
+.email-link {
+    width: 100px;
+    height: 30px;
+    position: relative;
+}
+
+.email-link::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/icons/mail.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 10px;
+    left: -18px;
+    top: 5px;
+}
+
+.phone-footer {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 28px;
+}
+
+.call {
+    padding: 16px;
+    background-color: #2b2b2b;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 21px;
+}
+
+.call span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FF5710;
+}
+
+.call:hover {
+    background-color: #FF5710;
+    transition: all .3s ease;
+}
+
+.call:hover span {
+    color: white;
+    transition: all .3s ease;
+}
+
+.footer-social-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.footer-social-item:hover .social-link-header svg {
+    fill: white;
+    transition: all .3s ease-in-out;
+}
+
+.footer-social-item::before {
+    position: absolute;
+    content: '';
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #393939;
+    margin: 3px;
+    bottom: -6px;
+    right: -12px;
+}
+
+.footer-social-item:hover::before {
+    border: 1px solid #fff;
+    transition: all .3s ease-in-out;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.catalog-wrapper {
+    flex-basis: 63%;
+}
+
+.top-catalog-wrapper {
+
+}
+
+.catalog-inner {
     display: flex;
     justify-content: space-between;
 }
@@ -917,6 +1098,20 @@ body {
     .main-slider-description {
         margin-bottom: 15px;
     }
+
+    .footer-top {
+        flex-wrap: wrap;
+    }
+
+    .footer-list-byers {
+        margin-right: 0;
+    }
+
+    .catalog-wrapper {
+        flex-basis: 35%;
+        margin: 0 10px;
+    }
+
 }
 
 @media (max-width: 1250px) {
@@ -1042,6 +1237,10 @@ body {
     .bioflares-sliders-title {
         font-size: 29px;
     }
+
+    /*.footer-links {*/
+    /*    order: -1;*/
+    /*}*/
 }
 
 @media (max-width: 960px) {
@@ -1195,6 +1394,11 @@ body {
 
     .top-pagination {
         color: white;
+    }
+
+    .footer-links {
+        order: -1;
+        width: 100%;
     }
 }
 
@@ -1542,6 +1746,100 @@ body {
         width: calc(100% - 90px) !important;
     }
 
+    .footer-links,
+    .catalog-wrapper {
+        flex-direction: column;
+    }
+
+    .footer-top {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .catalog-inner,
+    .catalog-wrapper,
+    .footer-list-catalog2,
+    .footer-list-byers {
+        margin: 0;
+    }
+
+    .footer-list-logo {
+        position: relative;
+    }
+
+    .logo-wrapper {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        bottom: -300px;
+    }
+
+    .email {
+        text-align: center;
+    }
+
+    .footer {
+        padding: 46px 10px 117px;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        padding: 58px 0 23px;
+    }
+
+    .footer-phone {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .footer-social-wrap {
+        padding-top: 24px;
+        width: 245px;
+        margin: 0 auto;
+    }
+    .call {
+        width: 256px;
+        margin: 0 auto;
+        display: block;
+    }
+    .email::before {
+        left: 215px;
+    }
+
+    .catalog-wrapper {
+        padding: 16px 0 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-title::before {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: -8px;
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/icons/arrow-up.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .footer-title.active::before {
+        transform: rotate(180deg);
+        transition: transform .3s ease-in-out;
+    }
+
+    .catalog-inner {
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+    .footer-list-byers {
+        padding: 16px 0 16px;
+        border-top: 1px solid #393939;
+        border-bottom: 1px solid #393939;
+    }
 }
 
 @media (max-width: 550px) {
@@ -1650,6 +1948,9 @@ body {
 
     .bioflares-sliders-title {
         font-size: 20px;
+    }
+    .footer-top {
+        padding-bottom: 130px;
     }
 
 }

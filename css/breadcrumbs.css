@@ -1,0 +1,37 @@
+.breadcrumbs-inner {
+    margin-top: 40px;
+}
+
+.breadcrumbs-inner {
+    display: flex;
+}
+
+.breadcrumbs-item {
+    margin: 0 10px;
+    position: relative;
+}
+
+.breadcrumbs-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 133.7%;
+    color: #555555;
+}
+
+.breadcrumbs-link.active {
+    color: #929292;
+}
+
+.breadcrumbs-link::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    right: -14px;
+    bottom: 5px;
+    background-image: url(../images/icons/breadcrumbs-Right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
