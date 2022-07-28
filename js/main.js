@@ -113,9 +113,72 @@ new Swiper(".news-slider-wrapper", {
     },
 })
 
-//открыть закрыть меню в футере
+//открыть закрыть каталог в футере
 
 $(".footer-title").on("click", function () {
     $(this).next().slideToggle();
     $(this).toggleClass("active");
 });
+
+var bigSlides = new Swiper(".bigSlides-slider-wrapper", {
+    height: 497,
+    spaceBetween: 12,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+new Swiper(".thumbs-slider-wrapper", {
+    slidesPerView: 2,
+    height: 115,
+    spaceBetween: 12,
+    navigation: {
+        nextEl: ".arrow-next-bigSlides",
+        prevEl: ".arrow-prev-bigSlides",
+    },
+    thumbs: {
+        swiper: bigSlides,
+    },
+});
+
+$(".slider-tabs").each(function () {
+    let ths = $(this);
+    ths.find(".slider-text-description").not(":first").hide();
+    ths
+        .find(".tabs")
+        .click(function () {
+            ths
+                .find(".tabs")
+                .removeClass("active")
+                .eq($(this).index())
+                .addClass("active");
+            ths
+                .find(".description-inner")
+                .hide()
+                .eq($(this).index())
+                .fadeIn();
+        })
+        .eq(0)
+        .addClass("active");
+});
+
+new Swiper(".popular-bioflares-inner", {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 4,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        550: {
+            slidesPerView: 2,
+            freeMode: true,
+        },
+        860: {
+            slidesPerView: 3,
+        },
+    },
+    scrollbar: {
+        el: ".progress-bar-video",
+        hide: false,
+    },
+})

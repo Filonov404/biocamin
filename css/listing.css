@@ -20,11 +20,13 @@
 }
 
 .listing-decor {
-    display: block;
-    border-bottom: 1px solid #D8DCE5;
-    transform: rotate(180deg);
-    width: 60%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 1px;
+    background: #DDE3EA;
+    margin: 0 10px;
 }
+
 .listing-scroll-decor {
     display: block;
     background-image: url(../images/icons/scloll-decor.svg);
@@ -32,6 +34,10 @@
     background-position: center;
     width: 40px;
     height: 40px;
+}
+
+.listing-inner {
+    overflow-x: auto;
 }
 
 .listing-wrapper-category {
@@ -51,7 +57,7 @@
     border: 1px solid #C8C8C8;
 }
 
-.listing-item-category:hover {
+.listing-item-category.active {
     background-color: #1D1D1D;
     transition: all .1s ease;
 }
@@ -66,22 +72,33 @@
     color: #808080;
 }
 
-.listing-item-category:hover .listing-link {
+.listing-item-category.active .listing-link {
     margin-left: 20px;
     background-color: #1D1D1D;
     color: white;
 }
 
-.listing-item-category:hover .listing-link::before {
+.listing-item-category.active .listing-link::before {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 1px;
     left: -27px;
-    top: 5px;
+    top: 9px;
+    transform: rotate(45deg);
     content: '';
-    background-image: url(../images/icons/close-listing-item.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.listing-item-category.active .listing-link::after {
+    position: absolute;
+    width: 12px;
+    height: 1px;
+    left: -27px;
+    top: 9px;
+    transform: rotate(-45deg);
+    content: '';
+    background-color: #fff;
     z-index: 1;
 }
 
@@ -291,12 +308,16 @@
     transition: all .3s ease-in-out;
 }
 
-.pagination-item:hover {
+.breadcrumbs-link:hover {
     color: #FF5710;
     transition: all .3s ease-in-out;
 }
 
-
+@media (max-width: 1100px) {
+    .card-price-new {
+        font-size: 20px;
+    }
+}
 
 @media (max-width: 960px){
     .section-wrapper {
@@ -304,20 +325,27 @@
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .section-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .pagination-item {
         margin: 0 10px;
     }
+
     .next-page span,
     .prev-page span {
         visibility: hidden;
     }
+
     .prev-page,
     .next-page {
         width: 20px;
+    }
+
+    .card-price-new {
+        font-size: 17px;
     }
 }
 

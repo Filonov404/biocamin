@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <img src="images/icons/logo.svg" alt="logo" class="logo-img">
+            </div>
+            <div class="city-select-mobile">
+                <span>Москва</span>
+            </div>
+            <form class="header-input" action="#">
+                <input class="search-header" type="text" placeholder="Найти на сайте">
+                <button class="search-btn">
+                    <img src="images/icons/search.svg" alt="search" class="search-img">
+                </button>
+                <div class="burger-mobile">
+                    <button class="menu-mobile">
+                        <span class="burger-btn"></span>
+                    </button>
+                </div>
+            </form>
+            <div class="header-wrap-address">
+                <div class="header-address">
+                    <span class="address">г. Москва, ул. Тимирязевская <br> д 2/3 ТЦ Парк 11</span>
+                </div>
+                <div class="border-dec"></div>
+                <div class="info-header">
+                    <div class="work-time-wrapper">
+                        <span class="time-data">8.00 - 22.00</span>
+                        <span class="week-data">ежедневно</span>
+                    </div>
+                    <a href="mailto:info@firezo.ru" class="email-header">info@firezo.ru</a>
+                </div>
+            </div>
+            <div class="contact-wrapper">
+                <a href="tel:+74951285788" class="phone-header">+7 (495) 128-57-88</a>
+                <div class="social-wrapper">
+                    <a href="#" class="social-link-header">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="#8D8D8D"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.00327 5.87842C6.45102 5.87842 4.38477 7.94688 4.38477 10.4968C4.38477 13.049 6.45327 15.1153 9.00327 15.1153C11.5555 15.1153 13.6218 13.0468 13.6218 10.4968C13.6218 7.94463 11.5533 5.87842 9.00327 5.87842ZM9.00327 13.4945C7.34652 13.4945 6.00552 12.1528 6.00552 10.4968C6.00552 8.84087 7.34727 7.49914 9.00327 7.49914C10.6593 7.49914 12.001 8.84087 12.001 10.4968C12.0018 12.1528 10.66 13.4945 9.00327 13.4945Z"/>
+                            <path d="M12.7112 1.55654C11.0552 1.47929 6.95342 1.48304 5.29592 1.55654C3.83942 1.62479 2.55467 1.97653 1.51892 3.01226C-0.21208 4.74323 0.0091705 7.07569 0.0091705 10.4964C0.0091705 13.9973 -0.18583 16.2758 1.51892 17.9805C3.25667 19.7175 5.62292 19.4902 9.00317 19.4902C12.4712 19.4902 13.6682 19.4925 14.8944 19.0177C16.5617 18.3705 17.8202 16.8803 17.9432 14.2036C18.0212 12.5468 18.0167 8.44592 17.9432 6.78845C17.7947 3.62875 16.0989 1.71254 12.7112 1.55654ZM15.3324 16.8353C14.1977 17.97 12.6234 17.8688 8.98142 17.8688C5.23142 17.8688 3.72767 17.9243 2.63042 16.824C1.36667 15.5663 1.59542 13.5466 1.59542 10.4844C1.59542 6.3407 1.17017 3.35651 5.32892 3.14351C6.28442 3.10976 6.56567 3.09851 8.97092 3.09851L9.00467 3.12101C13.0014 3.12101 16.1372 2.70252 16.3254 6.86045C16.3682 7.80918 16.3779 8.09417 16.3779 10.4956C16.3772 14.2021 16.4477 15.7148 15.3324 16.8353Z"/>
+                            <path d="M13.8044 6.7754C14.4004 6.7754 14.8836 6.29221 14.8836 5.69617C14.8836 5.10013 14.4004 4.61694 13.8044 4.61694C13.2083 4.61694 12.7251 5.10013 12.7251 5.69617C12.7251 6.29221 13.2083 6.7754 13.8044 6.7754Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link-header">
+                        <svg width="22" height="16" viewBox="0 0 22 16" fill="#8D8D8D"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.256 9.17485C17.9003 8.61485 18.0021 8.36572 18.256 7.86515C18.2606 7.85943 21.1967 2.80115 21.4993 1.08572L21.5011 1.08457C21.6514 0.459428 21.5011 0 20.7742 0H18.3688C17.7564 0 17.4741 0.394285 17.3228 0.835433C17.3228 0.835433 16.0981 4.49028 14.3655 6.85943C13.8064 7.544 13.5478 7.76343 13.2426 7.76343C13.0923 7.76343 12.8585 7.544 12.8585 6.91885V1.08457C12.8585 0.334857 12.687 0 12.1801 0H8.39786C8.01377 0 7.78551 0.349715 7.78551 0.675428C7.78551 1.38628 8.65179 1.54972 8.74163 3.54972V7.88915C8.74163 8.84 8.6032 9.01485 8.29611 9.01485C7.47841 9.01485 5.49376 5.34515 4.31764 1.14515C4.08022 0.330285 3.84829 0.00114328 3.23136 0.00114328H0.825028C0.138421 0.00114328 0 0.395428 0 0.836567C0 1.616 0.817694 5.49143 3.80246 10.6114C5.79169 14.1063 8.59312 16 11.1415 16C12.6734 16 12.8604 15.5795 12.8604 14.856C12.8604 11.5166 12.7219 11.2012 13.4892 11.2012C13.8449 11.2012 14.4572 11.4206 15.8872 13.1063C17.5217 15.1052 17.7903 16 18.7052 16H21.1106C21.7963 16 22.1438 15.5795 21.9439 14.7497C21.4864 13.0046 18.3953 9.41485 18.256 9.17485Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link-header">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="#8D8D8D"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M14.6324 2.4891C13.0222 0.884833 10.881 0.000940737 8.59975 0C3.89908 0 0.0734249 3.80725 0.0715342 8.48668C0.0709039 9.98252 0.463554 11.4428 1.20988 12.7299L0 17.1279L4.52094 15.9476C5.76664 16.6239 7.16907 16.9803 8.59628 16.9806H8.59985C13.3 16.9806 17.1261 13.1731 17.1279 8.49347C17.1288 6.22557 16.2425 4.09327 14.6324 2.4891ZM8.59975 15.5474H8.59681C7.32495 15.5468 6.07757 15.2066 4.98912 14.564L4.73039 14.4111L2.04759 15.1115L2.76367 12.5083L2.59508 12.2414C1.88552 11.1182 1.51083 9.82004 1.51146 8.4872C1.51293 4.59778 4.69279 1.43345 8.60259 1.43345C10.4959 1.43408 12.2756 2.16879 13.6139 3.5022C14.9521 4.83561 15.6887 6.60798 15.688 8.49295C15.6863 12.3827 12.5067 15.5474 8.59975 15.5474ZM12.4878 10.264C12.2748 10.1578 11.2271 9.64487 11.0317 9.57401C10.8366 9.50324 10.6943 9.468 10.5524 9.68021C10.4103 9.89242 10.0019 10.3702 9.87764 10.5116C9.75325 10.6532 9.62905 10.671 9.41593 10.5648C9.2028 10.4586 8.51624 10.2346 7.70227 9.51215C7.06886 8.94979 6.64122 8.25533 6.51685 8.04311C6.39269 7.83068 6.5158 7.72698 6.61034 7.61031C6.84101 7.32523 7.07201 7.02636 7.14302 6.88491C7.21413 6.74336 7.17852 6.61948 7.12516 6.51338C7.07201 6.40727 6.64585 5.36343 6.46833 4.93869C6.29522 4.52533 6.11969 4.58116 5.98881 4.57468C5.86465 4.56851 5.72252 4.56725 5.5804 4.56725C5.43838 4.56725 5.20749 4.62026 5.01212 4.83268C4.81685 5.045 4.26642 5.55798 4.26642 6.60181C4.26642 7.64565 5.02998 8.65404 5.13649 8.79559C5.243 8.93714 6.63913 11.0792 8.77664 11.9977C9.28504 12.2163 9.68192 12.3467 9.99142 12.4444C10.502 12.6059 10.9664 12.583 11.3336 12.5285C11.743 12.4676 12.5942 12.0155 12.7719 11.5201C12.9495 11.0247 12.9495 10.6002 12.8961 10.5116C12.843 10.4231 12.7008 10.3702 12.4878 10.264Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link-header">
+                        <svg width="19" height="18" viewBox="0 0 19 18" fill="#8D8D8D"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.45545 11.6587L7.14115 16.3254C7.59083 16.3254 7.78558 16.1215 8.01913 15.8765L10.1274 13.7497L14.4959 17.1268C15.2972 17.5981 15.8616 17.3498 16.0777 16.3488L18.9452 2.16505L18.9459 2.16422C19.2001 0.913992 18.5177 0.425102 17.737 0.731808L0.882079 7.54369C-0.268241 8.01502 -0.250824 8.69194 0.686532 8.99865L4.99568 10.4135L15.0049 3.80221C15.476 3.47293 15.9043 3.65512 15.552 3.98439L7.45545 11.6587Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link-header">
+                        <svg width="19" height="20" viewBox="0 0 19 20" fill="#8D8D8D"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7161 12.671C19.269 8.00486 18.4504 5.05903 16.9738 3.72664L16.9747 3.72586C14.5914 1.45049 6.5429 1.11371 3.69171 3.82806C2.4113 5.15581 1.96029 7.10447 1.91087 9.51688C1.86144 11.93 1.80275 16.4506 6.00464 17.677H6.0085L6.00464 19.5497C6.00464 19.5497 5.97607 20.3084 6.4595 20.461C7.01244 20.6406 7.26266 20.2883 8.9825 18.229C11.8584 18.479 14.0671 17.9061 14.3181 17.8225C14.8988 17.6274 18.1848 17.1915 18.7161 12.671ZM9.26591 16.9113C9.26591 16.9113 7.44569 19.1866 6.87961 19.7774C6.69427 19.9694 6.49117 19.9515 6.49426 19.5706C6.49426 19.3206 6.50815 16.4615 6.50815 16.4615C2.9457 15.4379 3.15576 11.5886 3.19437 9.57495C3.23298 7.56047 3.60058 5.91065 4.68484 4.79968C7.18621 2.44843 14.2424 2.97412 16.0402 4.66806C18.2381 6.62137 17.4558 12.1398 17.4604 12.328C17.0086 16.1015 14.3459 16.3407 13.8562 16.504C13.6469 16.5737 11.7048 17.0746 9.26591 16.9113Z"
+                            />
+                            <path d="M10.2733 5.24176C9.97596 5.24176 9.97596 5.70628 10.2733 5.71015C12.58 5.72796 14.4798 7.33985 14.5007 10.2965C14.5007 10.6085 14.9563 10.6046 14.9524 10.2926H14.9516C14.9269 7.10681 12.8526 5.25957 10.2733 5.24176Z"
+                            />
+                            <path d="M13.3075 9.80637C13.3005 10.1145 13.7554 10.1292 13.7593 9.81722C13.7971 8.06055 12.7167 6.61358 10.6864 6.46106C10.3891 6.43938 10.3582 6.90777 10.6548 6.92945C12.4155 7.06339 13.343 8.26804 13.3075 9.80637Z"
+                            />
+                            <path d="M12.8212 11.8045C12.4396 11.5832 12.0513 11.7209 11.8906 11.9385L11.5546 12.3744C11.384 12.5958 11.0651 12.5664 11.0651 12.5664C8.73744 11.9494 8.115 9.50754 8.115 9.50754C8.115 9.50754 8.08642 9.17696 8.29957 8.99966L8.71968 8.65127C8.92974 8.48404 9.06257 8.08146 8.84865 7.68584C8.27717 6.65074 7.89336 6.29383 7.69797 6.01977C7.49255 5.76196 7.18364 5.7039 6.86238 5.87809H6.85543C6.18742 6.26983 5.45608 7.003 5.69009 7.75784C6.08934 8.55373 6.82299 11.0907 9.16142 13.0077C10.2603 13.9143 11.9995 14.8433 12.7377 15.0578L12.7447 15.0686C13.4722 15.3117 14.1796 14.5499 14.5572 13.8601V13.8546C14.7248 13.521 14.6692 13.2051 14.4244 12.9985C13.9904 12.5742 13.3355 12.1058 12.8212 11.8045Z"
+                            />
+                            <path d="M11.0043 8.18904C11.7464 8.2324 12.1063 8.62105 12.1448 9.41925C12.1587 9.73125 12.6105 9.70957 12.5967 9.39757C12.5472 8.3555 12.0051 7.77484 11.029 7.72065C10.7316 7.70284 10.7038 8.17124 11.0043 8.18904Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="favourites">
+                <img src="images/icons/favourites.svg" alt="favourites " class="favourites-decor">
+                <button class="favourites-btn">Избранное</button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header-bottom">
+    <div class="container">
+        <div class="header-bottom-wrapper">
+            <div class="header-nav-wrapper">
+                <div class="menu-top">
+                    <span class="menu-text">Меню</span>
+                    <button class="close-btn"></button>
+                </div>
+                <div class="catalog">
+                    <button class="header-catalog">
+                        <span class="burger"></span>
+                        <span>Каталог</span>
+                    </button>
+                    <button class="right-arrow-mobile"></button>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-inner">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                На заказ
+                            </a>
+                            <button class="right-arrow-mobile"></button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                О нас
+                            </a>
+                            <button class="right-arrow-mobile"></button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Наши работы
+                            </a>
+                            <button class="right-arrow-mobile"></button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Сотрудничество
+                            </a>
+                            <button class="right-arrow-mobile"></button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Контакты
+                            </a>
+                            <button class="right-arrow-mobile"></button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="bottom-block-menu">
+                    <div class="favourites-menu">
+                        <button class="favourites-btn">Избранное</button>
+                        <span class="line"></span>
+                        <img src="images/icons/favourites.svg" alt="favourites " class="favourites-decor">
+                    </div>
+                    <div class="header-logo-mobile">
+                        <img src="images/icons/logo.svg" alt="logo" class="logo-img">
+                    </div>
+                    <a href="tel:+74951285788" class="phone-header-mobile">+7 (495) 128-57-88</a>
+                    <button class="call-me">
+                        <span>Позвонить</span>
+                    </button>
+                    <div class="social-wrapper">
+                        <a href="#" class="social-link-header">
+                            <img src="images/icons/instagram.svg" alt="instagram" class="social-img">
+                        </a>
+                        <a href="#" class="social-link-header">
+                            <img src="images/icons/vkontakte.svg" alt="vkontakte" class="social-img">
+                        </a>
+                        <a href="#" class="social-link-header">
+                            <img src="images/icons/whatsapp.svg" alt="whatsapp" class="social-img">
+                        </a>
+                        <a href="#" class="social-link-header">
+                            <img src="images/icons/telegram.svg" alt="telegram" class="social-img">
+                        </a>
+                        <a href="#" class="social-link-header">
+                            <img src="images/icons/viber.svg" alt="viber" class="social-img">
+                        </a>
+                    </div>
+                    <div class="mail-wrap">
+                        <img src="images/icons/mail.svg" alt="" class="mail-icon">
+                        <a href="mailto:info@firezo.ru" class="email-header">info@firezo.ru</a>
+                    </div>
+
+                    <div class="header-address">
+                        <span class="address">г. Москва, ул. Тимирязевская <br> д 2/3 ТЦ Парк 11</span>
+                    </div>
+                </div>
+            </div>
+            <div class="city-select">
+                <span>Москва</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="breadcrumbs-wrapper">
+    <div class="container">
+        <ul class="breadcrumbs-inner">
+            <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs-link">
+            <span><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.0678 5.54093L7.04138 0.624611C7.03494 0.618283 7.02826 0.612142 7.02146 0.606189C6.4726 0.127338 5.64322 0.125627 5.09226 0.602228C5.08541 0.608158 5.07875 0.614275 5.07226 0.620556L0 5.5395L0.681547 6.20309L1.06439 5.83182V11.7541H4.73069C4.99713 11.7541 5.2131 11.5442 5.2131 11.2853V7.46503H6.90153V11.2853C6.90153 11.5442 7.11751 11.7541 7.38394 11.7541H11.002C11.002 11.7541 11.002 10.913 11.002 9.8791C11.002 9.62021 10.786 9.41035 10.5196 9.41035C10.2532 9.41035 10.0372 9.62021 10.0372 9.8791C10.0372 10.396 10.0372 10.4414 10.0372 10.8166H7.86635V6.99628C7.86635 6.73739 7.65038 6.52753 7.38394 6.52753H4.73069C4.46426 6.52753 4.24829 6.73739 4.24829 6.99628V10.8166H2.0292V4.91035C2.0292 4.90566 2.02913 4.90099 2.02899 4.89635L5.74245 1.29516C5.92318 1.14603 6.18827 1.14659 6.3683 1.29645L10.0372 4.88496V10C10.0372 10.2589 10.2532 10.0041 10.5196 10.0041C10.786 10.0041 11.002 11.8519 11.002 11.593V5.82863L11.3834 6.20168L12.0678 5.54093Z"
+                      fill="#555555"/>
+                </svg>
+            </span>
+                </a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs-link">
+                    Каталог
+                </a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs-link active">
+                    Серия Finesta
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<section class="card">
+    <div class="container">
+        <div class="top-slider">
+            <div class="card-slider">
+                <div class="card-slider-inner">
+                    <div class="thumbs-slider-wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="thumb-slider-slide swiper-slide">
+                                <img src="images/main/card-slide.jpg" alt="" class="card-slider-img">
+                            </div>
+                            <div class="thumb-slider-slide swiper-slide">
+                                <img src="images/main/card-slide.jpg" alt="" class="card-slider-img">
+                            </div>
+                            <div class="thumb-slider-slide swiper-slide">
+                                <img src="images/main/card-slide.jpg" alt="" class="card-slider-img">
+                            </div>
+                            <div class="thumb-slider-slide swiper-slide">
+                                <img src="images/main/card-slide.jpg" alt="" class="card-slider-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bigSlides-slider-wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="card-slider-slide swiper-slide">
+                                <img src="images/main/card-slide.jpg" alt="" class="card-slider-img">
+                            </div>
+                            <div class="card-slider-slide swiper-slide">
+                                <img src="images/main/card-slide.jpg" alt="" class="card-slider-img">
+                            </div>
+                            <div class="card-slider-slide swiper-slide">
+                                <img src="images/main/card-slide.jpg" alt="" class="card-slider-img">
+                            </div>
+                            <div class="card-slider-slide swiper-slide">
+                                <img src="images/main/card-slide.jpg" alt="" class="card-slider-img">
+                            </div>
+                        </div>
+                        <div class="bigSlides-slider-arrows">
+                            <button class="arrow-prev-bigSlides"></button>
+                            <button class="arrow-next-bigSlides"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content-slider">
+                    <div class="availability-wrapper">
+                        <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 6.5L5.5 11L15.5 1" stroke="#FF5710" stroke-width="2"/>
+                        </svg>
+                        <span>В наличии</span>
+                    </div>
+                    <h1 class="card-content-title">Встраиваемый биокамин Firezo Minimal 600</h1>
+                    <p class="card-content-text">
+                        При горении топливо не выделяет вредных для здоровья газов, что полностью оправдывает приставку
+                    </p>
+                    <div class="card-price-wrapper">
+                        <div class="card-sales-description">
+                            <span>-30%</span>
+                        </div>
+                        <div class="card-price-new">23 000 ₽</div>
+                        <div class="card-price-old">23 000 ₽</div>
+                    </div>
+                    <div class="sales-btns-wrapper">
+                        <div class="sales-btns-top">
+                            <button class="btn-bye"><span>Купить</span></button>
+                            <div class="share-wrapper">
+                                <a href="#" class="add-favorites">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.3755 7.49015L14.5628 7.85802L14.9712 7.91851L21.3097 8.85747L16.7776 13.3872L16.4856 13.6791L16.5543 14.0861L17.62 20.4046L11.9114 17.4941L11.5436 17.3066L11.1777 17.4977L5.49787 20.4638L6.50187 14.1351L6.56655 13.7274L6.27174 13.4385L1.69567 8.95317L8.02474 7.95245L8.43249 7.88798L8.61621 7.5183L11.4679 1.7801L14.3755 7.49015Z"
+                                              stroke-width="1.6"/>
+                                    </svg>
+                                </a>
+                                <span class="share-decor"></span>
+                                <a href="#" class="add-socials">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.6267 10.9438L11.459 18.8957L24.0349 26.4563" stroke-width="1.6"/>
+                                        <circle cx="11.459" cy="19.2124" r="2.2" fill="white" stroke-width="1.6"/>
+                                        <circle cx="23.707" cy="10.6167" r="2.2" fill="white" stroke-width="1.6"/>
+                                        <circle cx="23.707" cy="26.1292" r="2.2" fill="white" stroke-width="1.6"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sales-btns-bottom">
+                            <button class="installment-btn"><span>Рассрочка</span></button>
+                            <button class="pick-up-btn"><span>Подобрать биокамин</span></button>
+                        </div>
+                    </div>
+                    <div class="add-pay-from">
+                        <span class="pay-from-text">Заказать через:</span>
+                        <div class="social-wrap-icon">
+                            <a href="#" class="social-card-item">
+                                <svg class="hoverSvg" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="hoverCircle" cx="23" cy="23" r="22.5" stroke="#EFEFEF"/>
+                                    <path class="hoverPath"
+                                          d="M28.1899 24.1769C27.9135 23.8304 27.9926 23.6763 28.1899 23.3666C28.1935 23.363 30.4757 20.2332 30.7108 19.1718L30.7123 19.1711C30.8291 18.7843 30.7123 18.5 30.1472 18.5H28.2776C27.8016 18.5 27.5821 18.744 27.4646 19.0169C27.4646 19.0169 26.5126 21.2784 25.166 22.7443C24.7313 23.1678 24.5304 23.3036 24.2931 23.3036C24.1763 23.3036 23.9946 23.1678 23.9946 22.781V19.1711C23.9946 18.7072 23.8613 18.5 23.4673 18.5H20.5274C20.2289 18.5 20.0515 18.7164 20.0515 18.9179C20.0515 19.3578 20.7248 19.4589 20.7946 20.6964V23.3814C20.7946 23.9697 20.687 24.0779 20.4483 24.0779C19.8128 24.0779 18.2702 21.8073 17.356 19.2086C17.1714 18.7044 16.9912 18.5007 16.5116 18.5007H14.6413C14.1076 18.5007 14 18.7447 14 19.0176C14 19.4999 14.6356 21.8978 16.9556 25.0658C18.5017 27.2283 20.6792 28.4 22.66 28.4C23.8507 28.4 23.996 28.1398 23.996 27.6921C23.996 25.6259 23.8884 25.4307 24.4848 25.4307C24.7613 25.4307 25.2372 25.5665 26.3488 26.6095C27.6192 27.8463 27.828 28.4 28.5391 28.4H30.4087C30.9417 28.4 31.2117 28.1398 31.0564 27.6264C30.7009 26.5466 28.2982 24.3254 28.1899 24.1769Z"
+                                          fill="#8A8B90"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-card-item">
+                                <svg class="hoverSvg" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="hoverCircle" cx="23" cy="23" r="22.5" stroke="#EFEFEF"/>
+                                    <path class="hoverPath" fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M28.8011 17.2644C27.2715 15.7404 25.2373 14.9007 23.0702 14.8998C18.6045 14.8998 14.9701 18.5167 14.9683 22.9621C14.9677 24.3832 15.3408 25.7704 16.0498 26.9931L14.9004 31.1712L19.1953 30.05C20.3787 30.6925 21.711 31.031 23.0669 31.0314H23.0703C27.5354 31.0314 31.1702 27.4142 31.1719 22.9686C31.1728 20.8141 30.3308 18.7884 28.8011 17.2644ZM23.0702 29.6697H23.0674C21.8591 29.6692 20.6741 29.3461 19.64 28.7356L19.3943 28.5903L16.8456 29.2557L17.5259 26.7827L17.3657 26.5291C16.6916 25.4621 16.3357 24.2289 16.3363 22.9626C16.3377 19.2677 19.3585 16.2616 23.0728 16.2616C24.8715 16.2622 26.5622 16.9601 27.8336 18.2269C29.1049 19.4936 29.8046 21.1774 29.804 22.9681C29.8024 26.6633 26.7818 29.6697 23.0702 29.6697ZM26.7638 24.6505C26.5614 24.5496 25.5661 24.0624 25.3805 23.9951C25.1951 23.9278 25.06 23.8944 24.9252 24.096C24.7901 24.2976 24.4023 24.7514 24.2841 24.8858C24.166 25.0203 24.048 25.0372 23.8455 24.9363C23.6431 24.8355 22.9908 24.6226 22.2175 23.9363C21.6158 23.4021 21.2096 22.7423 21.0914 22.5407C20.9735 22.3389 21.0904 22.2404 21.1802 22.1296C21.3994 21.8588 21.6188 21.5748 21.6863 21.4404C21.7538 21.306 21.72 21.1883 21.6693 21.0875C21.6188 20.9867 21.2139 19.995 21.0453 19.5915C20.8808 19.1988 20.7141 19.2519 20.5898 19.2457C20.4718 19.2399 20.3368 19.2387 20.2018 19.2387C20.0669 19.2387 19.8475 19.289 19.6619 19.4908C19.4764 19.6925 18.9535 20.1799 18.9535 21.1715C18.9535 22.1631 19.6789 23.1211 19.7801 23.2556C19.8812 23.3901 21.2076 25.425 23.2382 26.2976C23.7212 26.5053 24.0982 26.6292 24.3923 26.722C24.8773 26.8754 25.3184 26.8537 25.6673 26.8019C26.0563 26.744 26.8649 26.3144 27.0337 25.8439C27.2024 25.3732 27.2024 24.9699 27.1517 24.8858C27.1012 24.8018 26.9662 24.7514 26.7638 24.6505Z"
+                                          fill="#8A8B90"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-card-item">
+                                <svg class="hoverSvg" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="hoverCircle" cx="23" cy="23" r="22.5" stroke="#EFEFEF"/>
+                                    <path class="hoverPath"
+                                          d="M20.8859 25.2269L20.6377 29.1357C20.9928 29.1357 21.1465 28.9649 21.3309 28.7598L22.9953 26.9783L26.4441 29.807C27.0767 30.2018 27.5223 29.9939 27.6929 29.1553L29.9567 17.275L29.9573 17.2743C30.158 16.2271 29.6192 15.8176 29.0029 16.0745L15.6964 21.7802C14.7882 22.175 14.802 22.7419 15.542 22.9988L18.944 24.1839L26.846 18.6463C27.2179 18.3705 27.556 18.5231 27.2779 18.7989L20.8859 25.2269Z"
+                                          fill="#8A8B90"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-card-item">
+                                <svg class="hoverSvg" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="hoverCircle" cx="23" cy="23" r="22.5" stroke="#EFEFEF"/>
+                                    <path class="hoverPath"
+                                          d="M31.8315 25.174C32.3554 20.7646 31.5799 17.9808 30.181 16.7217L30.1817 16.7209C27.924 14.5707 20.299 14.2524 17.5979 16.8175C16.3849 18.0722 15.9576 19.9137 15.9108 22.1934C15.864 24.4739 15.8084 28.7458 19.7891 29.9047H19.7927L19.7891 31.6745C19.7891 31.6745 19.762 32.3915 20.22 32.5356C20.7439 32.7053 20.9809 32.3724 22.6102 30.4263C25.3348 30.6626 27.4272 30.1212 27.665 30.0422C28.2151 29.8579 31.3282 29.446 31.8315 25.174ZM22.8787 29.1811C22.8787 29.1811 21.1543 31.3313 20.618 31.8896C20.4424 32.071 20.25 32.0542 20.2529 31.6942C20.2529 31.4579 20.2661 28.756 20.2661 28.756C16.8911 27.7888 17.0901 24.1512 17.1267 22.2483C17.1633 20.3446 17.5116 18.7855 18.5388 17.7357C20.9085 15.5137 27.5933 16.0105 29.2965 17.6113C31.3787 19.4572 30.6375 24.6722 30.6419 24.8499C30.2139 28.4158 27.6913 28.6419 27.2275 28.7963C27.0292 28.8621 25.1892 29.3355 22.8787 29.1811Z"
+                                          fill="#8A8B90"/>
+                                    <path class="hoverPath"
+                                          d="M23.8323 18.1535C23.5507 18.1535 23.5507 18.5925 23.8323 18.5961C26.0177 18.613 27.8175 20.1362 27.8372 22.9302C27.8372 23.2251 28.2689 23.2214 28.2652 22.9266H28.2645C28.2411 19.916 26.2759 18.1703 23.8323 18.1535Z"
+                                          fill="#8A8B90"/>
+                                    <path class="hoverPath"
+                                          d="M26.7058 22.4663C26.6992 22.7575 27.1301 22.7714 27.1338 22.4766C27.1696 20.8165 26.1461 19.4491 24.2227 19.305C23.941 19.2845 23.9117 19.7272 24.1927 19.7476C25.8608 19.8742 26.7394 21.0126 26.7058 22.4663Z"
+                                          fill="#8A8B90"/>
+                                    <path class="hoverPath"
+                                          d="M26.2472 24.3558C25.8858 24.1465 25.5178 24.2768 25.3656 24.4823L25.0474 24.8942C24.8857 25.1035 24.5835 25.0757 24.5835 25.0757C22.3784 24.4926 21.7887 22.1851 21.7887 22.1851C21.7887 22.1851 21.7617 21.8727 21.9636 21.7051L22.3616 21.3759C22.5606 21.2179 22.6864 20.8374 22.4838 20.4636C21.9424 19.4854 21.5788 19.1481 21.3937 18.8891C21.199 18.6455 20.9064 18.5906 20.602 18.7552H20.5955C19.9626 19.1254 19.2698 19.8183 19.4914 20.5316C19.8697 21.2837 20.5647 23.6812 22.7801 25.4927C23.8212 26.3494 25.4688 27.2274 26.1682 27.43L26.1748 27.4403C26.864 27.67 27.5341 26.9501 27.8919 26.2982V26.2931C28.0507 25.9778 27.998 25.6793 27.7661 25.4839C27.3549 25.083 26.7345 24.6404 26.2472 24.3558Z"
+                                          fill="#8A8B90"/>
+                                    <path class="hoverPath"
+                                          d="M24.5253 20.938C25.2284 20.979 25.5693 21.3463 25.6059 22.1006C25.619 22.3954 26.047 22.3749 26.0339 22.0801C25.987 21.0953 25.4734 20.5466 24.5487 20.4954C24.267 20.4786 24.2407 20.9212 24.5253 20.938Z"
+                                          fill="#8A8B90"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-tabs">
+            <div class="slider-tabs">
+                <div class="tabs-wrapper">
+                    <div class="top-btns">
+                        <button class="tabs">Описание</button>
+                        <button class="tabs">Характеристики</button>
+                        <button class="tabs">Доставка</button>
+                        <button class="tabs">Оплата</button>
+                        <button class="tabs">Гарантии</button>
+                        <button class="tabs">Отзывы</button>
+                        <button class="tabs">Чертежи</button>
+                    </div>
+                </div>
+                <div class="text-description-wrapper">
+                    <div class="description-inner">
+                        <div class="description-tab-text">
+                            <p class="tab-text">Биокамин напольный Firezo Diametro Maxi</p>
+                            <p class="tab-text">Отдельностоящая напольная модель.
+                                Состоит из основания изготовленного из дуба.
+                                Корпуса топливного блока. Два защитных термостойких стекла.
+                            </p>
+                            <p class="tab-text">Стоимость камина зависит от размеров корпуса.</p>
+                            <p class="tab-text">Данная модель может быть изготовлена по индивидуальным размерам.</p>
+                            <p class="tab-text"> - Применена технология лазерной сварки топливного
+                                блока сплошным швом «Laser Line». Топливный блок надежно загерметизирован.
+                                Вытяжка и дымоход не требуется, но после использования проветривайте помещение!</p>
+                            <p class="tab-text">Защитное закаленное стекло — дополнительное опция</p>
+                            <p class="tab-text">Тонированное закаленное стекло Стемалит вклеенное в заднюю стенку
+                                камина — дополнительная опция
+                            </p>
+                            <div class="video-descr-wrap">
+                                <a href="#" class="video-descr-link">
+                                    <svg width="49" height="50" viewBox="0 0 49 50" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M24.4996 48.3053C37.4936 48.3053 48.0273 37.8412 48.0273 24.933C48.0273 12.0248 37.4936 1.56059 24.4996 1.56059C11.5057 1.56059 0.97198 12.0248 0.97198 24.933C0.97198 37.8412 11.5057 48.3053 24.4996 48.3053ZM24.4996 49.171C37.9748 49.171 48.8987 38.3192 48.8987 24.933C48.8987 11.5467 37.9748 0.694946 24.4996 0.694946C11.0244 0.694946 0.100586 11.5467 0.100586 24.933C0.100586 38.3192 11.0244 49.171 24.4996 49.171Z"
+                                              fill="white"/>
+                                        <path d="M31.4707 24.933L21.014 30.9303L21.014 18.9356L31.4707 24.933Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-inner">
+                        <div class="description-table">
+                            <ul class="description-list">
+                                <li>
+                                    <span>Страна производства</span>
+                                    <div class="space-decor"></div>
+                                    <b>Россия</b>
+                                </li>
+                                <li>
+                                    <span>Объем топки</span>
+                                    <div class="space-decor"></div>
+                                    <b>2.7 л</b>
+                                </li>
+                                <li>
+                                    <span>Материал топки	</span>
+                                    <div class="space-decor"></div>
+                                    <b>Нержавеющая сталь</b>
+                                </li>
+                                <li>
+                                    <span>Материал топки	</span>
+                                    <div class="space-decor"></div>
+                                    <b>Нержавеющая сталь</b>
+                                </li>
+                                <li>
+                                    <span>Страна производства</span>
+                                    <div class="space-decor"></div>
+                                    <b>Россия</b>
+                                </li>
+                                <li>
+                                    <span>Объем топки</span>
+                                    <div class="space-decor"></div>
+                                    <b>2.7 л</b>
+                                </li>
+                                <li>
+                                    <span>Материал топки	</span>
+                                    <div class="space-decor"></div>
+                                    <b>Нержавеющая сталь</b>
+                                </li>
+                                <li>
+                                    <span>Материал топки	</span>
+                                    <div class="space-decor"></div>
+                                    <b>Нержавеющая сталь</b>
+                                </li>
+                            </ul>
+                            <p>
+                                Наслаждаться видом живого огня со всех сторон. Как и все напольные/настольные
+                                биокамины устанавливается в любом месте и идеально подходит как для больших
+                                пространств жилых, офисных, так и для квартир. Безопасен в использовании. Не требует
+                                подключения к дымоходу. Вес: 3,8 кг В комплект входит: маленький прямоугольный
+                                контейнер для биотоплива емкостью 0,4 литра, металлическая ручка для регулировки
+                                пламени.
+                                В этой модели используется биоконтейнер MINI
+                            </p>
+                        </div>
+                    </div>
+                    <div class="description-inner">
+                        <div class="description-delivery">
+                            <div class="description-delivery-top">
+                                <div class="description-delivery-descr">
+                                    <p>
+                                        Доставка осуществляется транспортной компанией
+                                        «до двери». Стоимость рассчитывается исходя из веса,
+                                        объёма и расстояния до вашего города по расценкам перевозчика
+                                    </p>
+                                    <b>
+                                        При заказе от 50 000 рублей и предоплате 100% доставка осуществляется за наш
+                                        счёт
+                                    </b>
+                                    <span>
+                                        Мы сотрудничаем с транспортными компаниями:
+                                    </span>
+                                </div>
+                                <div class="description-delivery-content">
+                                    <img src="images/partners/car.png" alt="" class="delivery-bg">
+                                </div>
+                            </div>
+                            <div class="partners-list">
+                                <div class="partners-item">
+                                    <img src="images/partners/1.png" alt="">
+                                </div>
+                                <div class="partners-item">
+                                    <img src="images/partners/2.png" alt="">
+                                </div>
+                                <div class="partners-item">
+                                    <img src="images/partners/3.png" alt="">
+                                </div>
+                                <div class="partners-item">
+                                    <img src="images/partners/4.png" alt="">
+                                </div>
+                                <div class="partners-item">
+                                    <img src="images/partners/5.png" alt="">
+                                </div>
+                                <div class="partners-item">
+                                    <img src="images/partners/6.png" alt="">
+                                </div>
+                                <div class="partners-item">
+                                    <img src="images/partners/7.png" alt="">
+                                </div>
+                                <div class="partners-item">
+                                    <img src="images/partners/8.png" alt="">
+                                </div>
+                            </div>
+                            <div class="description-delivery-bottom">
+                                <div class="delivery-in-city">
+                                    <p class="delivery-subtitle">Доставка по <span class="orange-title">Москве</span>
+                                    </p>
+                                    <span class="top-txt">Доставка по Москве и области осуществляется «до двери»,
+                                        стоимость в пределах МКАД – 500 рублей.
+                                    </span>
+                                    <strong>
+                                        При заказе от 25 000 рублей и предоплате 100%
+                                        доставка осуществляется бесплатно
+                                    </strong>
+                                    <b>
+                                        Срок доставки 1-3 дня
+                                    </b>
+                                </div>
+                                <div class="delivery-after-city">
+                                    <p class="delivery-subtitle"><span class="orange-title">Самовывоз </span>в Москве
+                                    </p>
+                                    <span class="top-txt">
+                                        Самовывоз осуществляется по адресу:
+                                        г. Москва, Тимирязевская , д.2/3 ,
+                                        ТЦ Парк 11, м. Дмитровская
+                                    </span>
+                                    <b>
+                                        Перед приездом просим Вас заранее нам позвонить по телефону
+                                        <span class="orange-title">+7-800-100-10-78</span>,
+                                        что бы мы успели подготовить Ваш заказ
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-inner">
+                        <div class="description-path-wrapper">
+                            <div class="description-path-wrap">
+                                <div class="description-path-num-wr">
+                                    <div class="description-path-num">01</div>
+                                    <span class="vertical-dashed-decor"></span>
+                                </div>
+                                <div class="description-path-text">
+                                    <div class="description-path-title">Оформление заказа</div>
+                                    <div class="path-text text">
+                                        После выбора товара нажмите кнопку «В корзину» –
+                                        товар добавится в вашу корзину. Далее, если вы
+                                        закончили выбирать товар, нажмите кнопку «Ваша корзина».
+                                        На странице «Ваша корзина» будут перечислены все выбранные
+                                        вами товары. В поле «Количество» вы можете изменить
+                                        количество товара для покупки. После изменения количества
+                                        товара необходимо нажать кнопку «Пересчитать» для пересчета
+                                        итоговой суммы заказа. В колонке «Действия» над каждым
+                                        товаром можно произвести следующие действия: либо удалить
+                                        товар из корзины, либо отложить товар на будущее.
+                                        Также можно ввести код скидки в соответствующее поле.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description-path-wrap">
+                                <div class="description-path-num-wr">
+                                    <div class="description-path-num">02</div>
+                                    <span class="vertical-decor"></span>
+                                </div>
+
+                                <div class="description-path-text">
+                                    <div class="description-path-title">Оформление и подтверждение заказа</div>
+                                    <div class="path-text text">
+                                        <span class="path-text">
+                                             После ввода необходимой информации о доставке товара
+                                        (ФИО получателя, адрес доставки, контактные данные,
+                                        вариант доставки, способ оплаты и т.д.) для оформления
+                                        заказа вам нужно нажать кнопку «Оформить заказ».
+                                        </span>
+                                        <span class="path-text">
+                                             Копия заказа будет выслана на ваш e-mail,
+                                        указанный при оформлении заказа.
+                                        </span>
+                                        <span class="path-text">
+                                          <strong>Внимание!</strong> Неправильно указанный номер телефона,
+                                        неточный или неполный адрес могут привести к
+                                        дополнительной задержке! Пожалуйста, внимательно
+                                        проверяйте ваши персональные данные при регистрации
+                                        и оформлении заказа.
+                                        </span>
+                                        <span class="path-text">
+                                            Через некоторое время (обычно в течение часа)
+                                        после оформления покупки, с вами свяжется наш
+                                        менеджер по контактным данным, указанным при
+                                        оформлении заказа. С менеджером можно будет
+                                        согласовать точное время и сроки доставки,
+                                        а также уточнить детали.
+                                        </span>
+                                        <span class="path-text">
+                                          <strong>Примечание:</strong> Для постоянных клиентов на сайте
+                                        магазина предусмотрена возможность регистрации.
+                                        В своем кабинете вы можете просмотреть содержимое
+                                        корзины, историю своих заказов, а также повторить
+                                        или отказаться от заказа, подписаться на рассылку
+                                        новостей магазина.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description-path-wrap">
+                                <div class="description-path-num-wr">
+                                    <div class="description-path-num">03</div>
+                                </div>
+                                <div class="description-path-text">
+                                    <div class="description-path-title">Оплата и цены</div>
+                                    <div class="path-text text">
+                                        <span class="path-text">
+                                            Цены, указанные на сайте, являются окончательными и не требуют доплат при
+                                        стандартных условиях поставки. Все налоги включены в стоимость товара.
+                                        </span>
+                                        <span class="path-text">
+                                       <strong>Внимание!</strong> Для каждого отдельного заказа возможен только один способ
+                                        оплаты на ваш выбор. Оплата заказа по частям различными способами невозможна.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment-methods">
+                                <span class="payment-title">Возможные способы оплаты</span>
+                                <div class="payment-wrapper">
+                                    <div class="payment-cash">
+                                        <div class="payment-cash-top">
+                                            <div class="payment-icon">
+                                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.6864 14.0352C35.6859 14.0352 35.6854 14.0352 35.685 14.0352H0.601334C0.269618 14.0348 0.00035118 14.3034 3.43341e-07 14.6351C3.43341e-07 14.6355 3.43341e-07 14.6361 3.43341e-07 14.6365V31.4766C-0.000350493 31.8083 0.268215 32.0776 0.59993 32.078C0.600369 32.078 0.600895 32.078 0.601334 32.078H24.4582C24.7903 32.078 25.0595 31.8087 25.0595 31.4766C25.0595 31.1446 24.7903 30.8753 24.4582 30.8753H1.20267V15.2378H35.0836V16.7415C35.0833 17.0732 35.3518 17.3425 35.6835 17.3428C35.684 17.3428 35.6845 17.3428 35.685 17.3428C36.0167 17.3432 36.2859 17.0746 36.2863 16.7429C36.2863 16.7425 36.2863 16.7419 36.2863 16.7415V14.6365C36.2866 14.3048 36.0181 14.0356 35.6864 14.0352Z" fill="#FF5710"/>
+                                                    <path d="M31.6063 11.2432L3.53936 4.92813C3.38359 4.89331 3.22036 4.92155 3.08538 5.00671C2.95057 5.09258 2.85523 5.22827 2.82015 5.38421L1.4168 11.6993C1.34471 12.0236 1.54924 12.345 1.87359 12.4171C2.19794 12.4892 2.51931 12.2846 2.5914 11.9603L3.86354 6.23394L31.3424 12.4164C31.3859 12.4265 31.4304 12.4315 31.475 12.4311C31.8071 12.4305 32.0758 12.1608 32.0753 11.8287C32.0748 11.548 31.8801 11.305 31.6063 11.2432Z" fill="#FF5710"/>
+                                                    <path d="M28.1974 7.76349L11.3573 0.746763C11.0646 0.62476 10.7274 0.750096 10.5855 1.03375L9.18211 3.84044C9.02362 4.13356 9.13273 4.49975 9.42594 4.65824C9.71907 4.81673 10.0853 4.70762 10.2437 4.4144C10.25 4.40291 10.2558 4.39116 10.2613 4.37923V4.38064L11.4127 2.07634L27.7329 8.87625C28.0403 9.00448 28.3934 8.85941 28.5216 8.55208C28.6498 8.24492 28.5048 7.89181 28.1974 7.76349Z" fill="#FF5710"/>
+                                                    <path d="M28.6236 16.8418H23.0545C22.7224 16.8418 22.4531 17.1111 22.4531 17.4431C22.4531 17.7752 22.7224 18.0445 23.0545 18.0445H28.6236C28.9557 18.0445 29.225 17.7752 29.225 17.4431C29.225 17.1111 28.9557 16.8418 28.6236 16.8418Z" fill="#FF5710"/>
+                                                    <path d="M17.4403 16.8818C14.0301 16.8818 11.2656 19.6463 11.2656 23.0565C11.2691 26.4653 14.0316 29.2277 17.4403 29.2313C20.8506 29.2313 23.6151 26.4668 23.6151 23.0565C23.6151 19.6463 20.8506 16.8818 17.4403 16.8818ZM17.4403 28.1086C14.6501 28.1086 12.3883 25.8467 12.3883 23.0565C12.3914 20.2677 14.6515 18.0076 17.4403 18.0045C20.2305 18.0045 22.4924 20.2663 22.4924 23.0565C22.4924 25.8467 20.2305 28.1086 17.4403 28.1086Z" fill="#FF5710"/>
+                                                    <path d="M34.2809 18.8462C30.562 18.8462 26.5625 19.7247 26.5625 21.6529V38.493C26.5625 40.4212 30.562 41.2997 34.2809 41.2997C37.9998 41.2997 41.9993 40.4212 41.9993 38.493V21.6529C41.9993 19.7247 37.9998 18.8462 34.2809 18.8462ZM40.5959 38.4825C40.49 38.8719 38.3857 39.8964 34.2809 39.8964C30.1761 39.8964 28.0718 38.8719 27.9658 38.493V37.39C29.459 38.1422 31.9254 38.493 34.2809 38.493C36.6364 38.493 39.1035 38.1387 40.5959 37.3893V38.4825ZM40.5959 35.6758C40.49 36.0652 38.3857 37.0897 34.2809 37.0897C30.1761 37.0897 28.0718 36.0652 27.9658 35.6863V34.5833C29.459 35.3355 31.9254 35.6863 34.2809 35.6863C36.6364 35.6863 39.1035 35.332 40.5959 34.5826V35.6758ZM40.5959 32.8691C40.49 33.2585 38.3857 34.283 34.2809 34.283C30.1761 34.283 28.0718 33.2585 27.9658 32.8796V31.7766C29.459 32.5288 31.9254 32.8796 34.2809 32.8796C36.6364 32.8796 39.1035 32.5253 40.5959 31.7759V32.8691ZM40.5959 30.0624C40.49 30.4518 38.3857 31.4763 34.2809 31.4763C30.1761 31.4763 28.0718 30.4518 27.9658 30.0729V28.9699C29.459 29.7221 31.9254 30.0729 34.2809 30.0729C36.6364 30.0729 39.1035 29.7186 40.5959 28.9692V30.0624ZM40.5959 27.2557C40.49 27.6452 38.3857 28.6696 34.2809 28.6696C30.1761 28.6696 28.0718 27.6452 27.9658 27.2663V26.1632C29.459 26.9119 31.9254 27.2663 34.2809 27.2663C36.6364 27.2663 39.1035 26.9119 40.5959 26.1625V27.2557ZM40.5959 24.449C40.49 24.8385 38.3857 25.8629 34.2809 25.8629C30.1761 25.8629 28.0718 24.8385 27.9658 24.4596V23.3565C29.459 24.1052 31.9254 24.4596 34.2809 24.4596C36.6364 24.4596 39.1035 24.1052 40.5959 23.3558V24.449ZM34.2809 23.0562C30.1824 23.0562 28.0788 22.0346 27.9658 21.6655V21.6613C28.0788 21.2705 30.1824 20.2495 34.2809 20.2495C38.3506 20.2495 40.4556 21.2557 40.5959 21.6529C40.4556 22.05 38.3506 23.0562 34.2809 23.0562Z" fill="#FF5710"/>
+                                                    <path d="M11.8268 28.0678H6.52285L4.00806 25.3173V20.7564L6.78528 18.0445H11.8268C12.1589 18.0445 12.4281 17.7752 12.4281 17.4431C12.4281 17.1111 12.1589 16.8418 11.8268 16.8418H6.54109C6.38392 16.8414 6.2328 16.9027 6.12009 17.0123L2.98572 20.0695C2.86863 20.2063 2.80443 20.3806 2.80469 20.5607V25.5509C2.80469 25.701 2.86073 25.8456 2.96186 25.9565L5.81276 29.0747C5.92669 29.1995 6.0879 29.2706 6.25692 29.2705H11.8268C12.1589 29.2705 12.4281 29.0012 12.4281 28.6692C12.4281 28.3371 12.1589 28.0678 11.8268 28.0678Z" fill="#FF5710"/>
+                                                </svg>
+                                            </div>
+                                            <span>
+                                            Наличный расчет
+                                        </span>
+                                        </div>
+                                        <p>
+                                            Оплата производится наличными курьеру
+                                            или в магазине при самовывозе.
+                                            Вместе с товаром передается товарный и
+                                            кассовый чеки, а также гарантийный талон
+                                        </p>
+                                    </div>
+                                    <div class="payment-card">
+                                        <div class="payment-cash-top">
+                                            <div class="payment-icon">
+                                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M39.4081 13.8555L26.1888 0.634222C25.8134 0.255253 25.3019 0.0423022 24.7684 0.0429703H24.7624C24.2324 0.0432208 23.7249 0.256255 23.3534 0.634222L9.33041 14.6552H2.00424C0.897315 14.6552 0 15.5526 0 16.6595V35.3657C0 36.4727 0.897315 37.37 2.00424 37.37H11.9025L13.8961 39.3655C14.2714 39.7445 14.7829 39.9575 15.3164 39.9568H15.3218C15.8519 39.9566 16.3598 39.7436 16.7314 39.3655L18.729 37.37H34.0721C35.179 37.37 36.0763 36.4727 36.0763 35.3657V20.0226L39.4047 16.6942C39.7846 16.3223 39.9991 15.8134 40 15.2819C40.002 14.7463 39.7887 14.2323 39.4081 13.8555ZM30.9094 7.24622L23.5004 14.6552H17.8271L28.0727 4.40955L30.9094 7.24622ZM24.2994 1.57622C24.5535 1.31591 24.9706 1.3109 25.231 1.56511C25.2347 1.56878 25.2385 1.57246 25.2421 1.57622L27.1281 3.46488L15.9371 14.6552H11.2197L24.2994 1.57622ZM15.7854 38.4235C15.6632 38.5511 15.4944 38.6235 15.3177 38.624C15.1387 38.6236 14.9673 38.5514 14.8421 38.4235L13.7925 37.37H16.8396L15.7854 38.4235ZM34.7402 35.3657C34.7402 35.7347 34.441 36.0338 34.0721 36.0338H2.00424C1.63529 36.0338 1.33616 35.7347 1.33616 35.3657V26.0126H34.7402V35.3657ZM34.7402 24.6764H1.33616V20.668H34.7402V24.6764ZM34.7402 19.3318H1.33616V16.6595C1.33616 16.2905 1.63529 15.9914 2.00424 15.9914H34.0721C34.441 15.9914 34.7402 16.2905 34.7402 16.6595V19.3318ZM38.4634 15.7462L36.0763 18.1333V16.6595C36.0763 15.5526 35.179 14.6552 34.0721 14.6552H25.3871L31.8514 8.19088L38.4607 14.8002C38.5891 14.926 38.6613 15.0982 38.6611 15.2779C38.661 15.4543 38.5897 15.6231 38.4634 15.7462Z" fill="#FF5710"/>
+                                                </svg>
+                                            </div>
+                                            <span>
+                                           Безналичный расчет
+                                        </span>
+                                        </div>
+                                        <p>
+                                            Оплата производится наличными курьеру
+                                            или в магазине при самовывозе.
+                                            Вместе с товаром передается товарный и
+                                            кассовый чеки, а также гарантийный талон
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-inner">
+                        <div class="guaranty-wrapper">
+                            <div class="guaranty-top">
+                                <span class="guaranty-title">Гарантия товара</span>
+                                <p class="guaranty-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Eu nulla ullamcorper nisi interdum. Mauris purus consectetur imperdiet purus in
+                                    at fermentum quam tincidunt. Est et rhoncus euismod sed sit. Velit semper neque
+                                    quisque ultricies ante aenean dolor fermentum. Sem at tortor ornare viverra donec
+                                    sed. Nunc feugiat ultrices diam faucibus ut tristique. Feugiat cursus ipsum quis
+                                    integer tincidunt. Tortor pharetra, consectetur sed lacinia proin est aliquam.
+                                    Viverra nec gravida blandit amet, sit. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Eu nulla ullamcorper nisi interdum. Mauris purus consectetur
+                                    imperdiet purus in at fermentum quam tincidunt. Est et rhoncus euismod sed sit.
+                                    Velit semper neque quisque ultricies ante aenean dolor fermentum. Sem at tortor
+                                    ornare viverra donec sed. Nunc feugiat ultrices diam faucibus ut tristique.
+                                    Feugiat cursus ipsum quis integer tincidunt. Tortor pharetra, consectetur sed
+                                    lacinia proin est aliquam. Viverra nec gravida blandit amet, sit.
+                                </p>
+                            </div>
+                            <div class="guaranty-certificates">
+                                <span class="title-certificates">Сертификаты товара</span>
+                                <div class="certificates-wrapper">
+                                    <div class="certificat-item">
+                                        <img src="images/main/crtificat.jpg" alt="" class="certificates-img">
+                                    </div>
+                                    <div class="certificat-item">
+                                        <img src="images/main/crtificat.jpg" alt="" class="certificates-img">
+                                    </div>
+                                    <div class="certificat-item">
+                                        <img src="images/main/crtificat.jpg" alt="" class="certificates-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-inner">
+                        <div class="reviews">
+                            <div class="review-item">
+                                <div class="review-user-info">
+                                    <span>Наталья</span>
+                                    <b>03 Июня 2020</b>
+                                </div>
+                                <div class="plus-minus-wrapper">
+                                    <div class="plus-item">
+                                        <span>Достоинства:</span>
+                                        <b>Адекватные цены и адекватные люди.</b>
+                                    </div>
+                                    <div class="minus-item">
+                                        <span>Недостатки:</span>
+                                        <b>Не получилось выявить...</b>
+                                    </div>
+                                </div>
+                                <div class="comment-item">
+                                    <span>Комментарий:</span>
+                                    <b>Впечатления-самые позитивные. При широком выборе
+                                        магазинов и услуг по биокаминам, первый раз
+                                        столкнулась с таким специалистом, как Дмитрий.
+                                        Спокойно, вежливо и оперативно отвечал на любые
+                                        мои вопросы...а я задавала их много и в любое
+                                        время, но не разу не почувствовала даже намека
+                                        на желание меня проигнорировать. Думаю, важно
+                                        получать не только качественный товар, но и
+                                        удовольствие от взаимодействия с людьми, которые
+                                        стоят за этим товаром и ручаются за него. Что и
+                                        произошло! Спасибо за этот опыт
+                                    </b>
+                                </div>
+                                <div class="review-photo">
+                                    <img src="images/main/revew1.png" alt="">
+                                    <img src="images/main/revew2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-user-info">
+                                    <span>Наталья</span>
+                                    <b>03 Июня 2020</b>
+                                </div>
+                                <div class="plus-minus-wrapper">
+                                    <div class="plus-item">
+                                        <span>Достоинства:</span>
+                                        <b>Адекватные цены и адекватные люди.</b>
+                                    </div>
+                                    <div class="minus-item">
+                                        <span>Недостатки:</span>
+                                        <b>Не получилось выявить...</b>
+                                    </div>
+                                </div>
+                                <div class="comment-item">
+                                    <span>Комментарий:</span>
+                                    <b>Впечатления-самые позитивные. При широком выборе
+                                        магазинов и услуг по биокаминам, первый раз
+                                        столкнулась с таким специалистом, как Дмитрий.
+                                        Спокойно, вежливо и оперативно отвечал на любые
+                                        мои вопросы...а я задавала их много и в любое
+                                        время, но не разу не почувствовала даже намека
+                                        на желание меня проигнорировать. Думаю, важно
+                                        получать не только качественный товар, но и
+                                        удовольствие от взаимодействия с людьми, которые
+                                        стоят за этим товаром и ручаются за него. Что и
+                                        произошло! Спасибо за этот опыт
+                                    </b>
+                                </div>
+                                <div class="review-photo">
+                                    <img src="images/main/revew1.png" alt="">
+                                    <img src="images/main/revew2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-inner">
+                        <div class="blueprints">
+                            <div class="blueprints-top">
+                                <span class="blueprints-title">Чертежи встраиваемого биокамина Firezo Minimal 600</span>
+                                <div class="blueprints-data-wrap">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Eu nulla ullamcorper nisi interdum. Mauris
+                                        purus consectetur imperdiet purus in at fermentum
+                                        quam tincidunt. Est et rhoncus euismod sed sit.
+                                        Velit semper neque quisque ultricies ante aenean
+                                        dolor fermentum. Sem at tortor ornare viverra
+                                        donec sed. Nunc feugiat ultrices diam faucibus
+                                        ut tristique. Feugiat cursus ipsum quis integer
+                                        tincidunt. Tortor pharetra, consectetur sed lacinia
+                                        proin est aliquam. Viverra nec gravida blandit amet,
+                                        sit. Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Eu nulla ullamcorper nisi interdum.
+                                        Mauris purus consectetur imperdiet purus in at
+                                        fermentum quam tincidunt. Est et rhoncus euismod
+                                        sed sit. Velit semper neque quisque ultricies ante
+                                        aenean dolor fermentum. Sem at tortor ornare viverra
+                                        donec sed. Nunc feugiat ultrices diam faucibus ut
+                                        tristique. Feugiat cursus ipsum quis integer tincidunt.
+                                        Tortor pharetra, consectetur sed lacinia proin est
+                                        aliquam. Viverra nec gravida blandit amet, sit.
+                                    </p>
+                                    <span class="vertical-solid-decor"></span>
+                                    <ul class="params-list">
+                                        <li>Длина 2м</li>
+                                        <li>Шарина 5м</li>
+                                        <li>Высота 10м</li>
+                                        <li>Глубина 2м</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="popular-bioflares">
+    <div class="container">
+        <div class="popular-bioflares-wrapper">
+            <h2 class="popular-bioflares-title">Популярные биокамины</h2>
+            <div class="popular-bioflares-inner">
+                <div class="swiper-wrapper">
+                    <div class="popular-card-item swiper-slide">
+                        <div class="card-top">
+                            <img src="images/catalog/img-card2.jpg" alt="" class="catalog-card-img">
+                            <div class="card-wrapper-sale">
+                                <div class="card-favourites">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.3755 7.49015L14.5628 7.85802L14.9712 7.91851L21.3097 8.85747L16.7776 13.3872L16.4856 13.6791L16.5543 14.0861L17.62 20.4046L11.9114 17.4941L11.5436 17.3066L11.1777 17.4977L5.49787 20.4638L6.50187 14.1351L6.56655 13.7274L6.27174 13.4385L1.69567 8.95317L8.02474 7.95245L8.43249 7.88798L8.61621 7.5183L11.4679 1.7801L14.3755 7.49015Z"
+                                              stroke="#808080" stroke-width="1.6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-wrapper">
+                            <p class="card-description">Топливный блок Биокамина Decofire Burner 1400...</p>
+                            <div class="card-price">
+                                <div class="card-price-new">23 000 ₽</div>
+                                <div class="card-price-old">23 000 ₽</div>
+                            </div>
+                            <button class="detailed">
+                                <span class="detailed-text">Подробнее</span>
+                                <span class="detailed-decor"><svg width="18" height="7" viewBox="0 0 18 7" fill="none"
+                                                                  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 6H16L12 1" stroke="#FF5710" stroke-width="1.6"/>
+                            </svg>
+                            </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popular-card-item swiper-slide">
+                        <div class="card-top">
+                            <img src="images/catalog/img-card2.jpg" alt="" class="catalog-card-img">
+                            <div class="card-wrapper-sale">
+                                <div class="card-favourites">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.3755 7.49015L14.5628 7.85802L14.9712 7.91851L21.3097 8.85747L16.7776 13.3872L16.4856 13.6791L16.5543 14.0861L17.62 20.4046L11.9114 17.4941L11.5436 17.3066L11.1777 17.4977L5.49787 20.4638L6.50187 14.1351L6.56655 13.7274L6.27174 13.4385L1.69567 8.95317L8.02474 7.95245L8.43249 7.88798L8.61621 7.5183L11.4679 1.7801L14.3755 7.49015Z"
+                                              stroke="#808080" stroke-width="1.6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-wrapper">
+                            <p class="card-description">Топливный блок Биокамина Decofire Burner 1400...</p>
+                            <div class="card-price">
+                                <div class="card-price-new">23 000 ₽</div>
+                                <div class="card-price-old">23 000 ₽</div>
+                            </div>
+                            <button class="detailed">
+                                <span class="detailed-text">Подробнее</span>
+                                <span class="detailed-decor"><svg width="18" height="7" viewBox="0 0 18 7" fill="none"
+                                                                  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 6H16L12 1" stroke="#FF5710" stroke-width="1.6"/>
+                            </svg>
+                            </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popular-card-item swiper-slide">
+                        <div class="card-top">
+                            <img src="images/catalog/img-card2.jpg" alt="" class="catalog-card-img">
+                            <div class="card-wrapper-sale">
+                                <div class="card-favourites">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.3755 7.49015L14.5628 7.85802L14.9712 7.91851L21.3097 8.85747L16.7776 13.3872L16.4856 13.6791L16.5543 14.0861L17.62 20.4046L11.9114 17.4941L11.5436 17.3066L11.1777 17.4977L5.49787 20.4638L6.50187 14.1351L6.56655 13.7274L6.27174 13.4385L1.69567 8.95317L8.02474 7.95245L8.43249 7.88798L8.61621 7.5183L11.4679 1.7801L14.3755 7.49015Z"
+                                              stroke="#808080" stroke-width="1.6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-wrapper">
+                            <p class="card-description">Топливный блок Биокамина Decofire Burner 1400...</p>
+                            <div class="card-price">
+                                <div class="card-price-new">23 000 ₽</div>
+                                <div class="card-price-old">23 000 ₽</div>
+                            </div>
+                            <button class="detailed">
+                                <span class="detailed-text">Подробнее</span>
+                                <span class="detailed-decor"><svg width="18" height="7" viewBox="0 0 18 7" fill="none"
+                                                                  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 6H16L12 1" stroke="#FF5710" stroke-width="1.6"/>
+                            </svg>
+                            </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popular-card-item swiper-slide">
+                        <div class="card-top">
+                            <img src="images/catalog/img-card2.jpg" alt="" class="catalog-card-img">
+                            <div class="card-wrapper-sale">
+                                <div class="card-favourites">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.3755 7.49015L14.5628 7.85802L14.9712 7.91851L21.3097 8.85747L16.7776 13.3872L16.4856 13.6791L16.5543 14.0861L17.62 20.4046L11.9114 17.4941L11.5436 17.3066L11.1777 17.4977L5.49787 20.4638L6.50187 14.1351L6.56655 13.7274L6.27174 13.4385L1.69567 8.95317L8.02474 7.95245L8.43249 7.88798L8.61621 7.5183L11.4679 1.7801L14.3755 7.49015Z"
+                                              stroke="#808080" stroke-width="1.6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-wrapper">
+                            <p class="card-description">Топливный блок Биокамина Decofire Burner 1400...</p>
+                            <div class="card-price">
+                                <div class="card-price-new">23 000 ₽</div>
+                                <div class="card-price-old">23 000 ₽</div>
+                            </div>
+                            <button class="detailed">
+                                <span class="detailed-text">Подробнее</span>
+                                <span class="detailed-decor"><svg width="18" height="7" viewBox="0 0 18 7" fill="none"
+                                                                  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 6H16L12 1" stroke="#FF5710" stroke-width="1.6"/>
+                            </svg>
+                            </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popular-card-item swiper-slide">
+                        <div class="card-top">
+                            <img src="images/catalog/img-card2.jpg" alt="" class="catalog-card-img">
+                            <div class="card-wrapper-sale">
+                                <div class="card-favourites">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.3755 7.49015L14.5628 7.85802L14.9712 7.91851L21.3097 8.85747L16.7776 13.3872L16.4856 13.6791L16.5543 14.0861L17.62 20.4046L11.9114 17.4941L11.5436 17.3066L11.1777 17.4977L5.49787 20.4638L6.50187 14.1351L6.56655 13.7274L6.27174 13.4385L1.69567 8.95317L8.02474 7.95245L8.43249 7.88798L8.61621 7.5183L11.4679 1.7801L14.3755 7.49015Z"
+                                              stroke="#808080" stroke-width="1.6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-wrapper">
+                            <p class="card-description">Топливный блок Биокамина Decofire Burner 1400...</p>
+                            <div class="card-price">
+                                <div class="card-price-new">23 000 ₽</div>
+                                <div class="card-price-old">23 000 ₽</div>
+                            </div>
+                            <button class="detailed">
+                                <span class="detailed-text">Подробнее</span>
+                                <span class="detailed-decor"><svg width="18" height="7" viewBox="0 0 18 7" fill="none"
+                                                                  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 6H16L12 1" stroke="#FF5710" stroke-width="1.6"/>
+                            </svg>
+                            </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar-video"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bigDeco">
+    <div class="container">
+        <div class="bigDeco-wrapper">
+            <div class="title-content">
+                <span class="title-title">Заголовок в несколько слов</span>
+                <p class="title-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Consectetur purus phasellus sem elit a. Varius lectus iaculis
+                    sed sollicitudin metus non amet, leo. Non arcu ac molestie
+                </p>
+                <a href="#" class="title-link-about">
+                    Подробнее о компании
+                </a>
+            </div>
+            <div class="big-item-wrap">
+                <div class="big-top">
+                    <span class="big-content">1500</span>
+                    <span class="big-content-text">Реализованных <br> проектов</span>
+                </div>
+                <div class="big-bottom">
+                    <span class="big-content-bottom">28</span>
+                    <span class="big-content-text bottom">Региональных <br> дилеров</span>
+                </div>
+            </div>
+        </div>
+        <div class="deco-fire-bottom">
+            <div class="fire-content">
+                <a href="#" class="fire-text">
+                    <img src="images/icons/Decofire-logo.svg" alt="" class="deco-logo">
+                </a>
+                <span class="fire-text-bottom">Огонь как искусство</span>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="footer-top">
+                <div class="footer-list-logo">
+                    <div class="footer-logo">
+                        <img src="images/icons/logo.svg" alt="logo" class="logo-img">
+                    </div>
+                    <div class="logo-wrapper">
+                        <div class="email">
+                            <a href="mailto:info@firezo.ru" class="email-link">info@firezo.ru </a>
+                        </div>
+                        <div class="address">
+                            <a href="#" class="address-link">г. Москва, ул. Тимирязевская <br> д 2/3 ТЦ Парк 11</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="catalog-wrapper">
+                        <h5 class="footer-title">Каталог</h5>
+                        <div class="catalog-inner">
+                            <ul class="footer-list-catalog1">
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-link-item">
+                                        Настольные биокамины
+                                    </a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-link-item">
+                                        Напольные биокамины
+                                    </a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-link-item">
+                                        Настенные биокамины
+                                    </a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-link-item">
+                                        Островные биокамины
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="footer-list-catalog2">
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-link-item">
+                                        Торцевые биокамины
+                                    </a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-link-item">
+                                        Встраиваемые биокамины
+                                    </a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-link-item">
+                                        Аксессуары и биотопливо
+                                    </a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-link-item">
+                                        Камины на заказ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-list-byers">
+                        <h5 class="footer-title">Покупателям</h5>
+                        <ul class="byers-list">
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-link-item">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-link-item">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-link-item">
+                                    Сотрудничество
+                                </a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-link-item">
+                                    Статьи
+                                </a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-link-item">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-list-contact">
+                    <div class="footer-phone">
+                        <a href="tel:+74951285788" class="phone-footer">+7 (495) 128-57-88</a>
+                    </div>
+                    <button class="call">
+                        <span>Позвонить</span>
+                    </button>
+                    <ul class="footer-social-wrap">
+                        <li class="footer-social-item">
+                            <a href="#" class="social-link-footer">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="#8D8D8D"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.00327 5.87842C6.45102 5.87842 4.38477 7.94688 4.38477 10.4968C4.38477 13.049 6.45327 15.1153 9.00327 15.1153C11.5555 15.1153 13.6218 13.0468 13.6218 10.4968C13.6218 7.94463 11.5533 5.87842 9.00327 5.87842ZM9.00327 13.4945C7.34652 13.4945 6.00552 12.1528 6.00552 10.4968C6.00552 8.84087 7.34727 7.49914 9.00327 7.49914C10.6593 7.49914 12.001 8.84087 12.001 10.4968C12.0018 12.1528 10.66 13.4945 9.00327 13.4945Z"/>
+                                    <path d="M12.7112 1.55654C11.0552 1.47929 6.95342 1.48304 5.29592 1.55654C3.83942 1.62479 2.55467 1.97653 1.51892 3.01226C-0.21208 4.74323 0.0091705 7.07569 0.0091705 10.4964C0.0091705 13.9973 -0.18583 16.2758 1.51892 17.9805C3.25667 19.7175 5.62292 19.4902 9.00317 19.4902C12.4712 19.4902 13.6682 19.4925 14.8944 19.0177C16.5617 18.3705 17.8202 16.8803 17.9432 14.2036C18.0212 12.5468 18.0167 8.44592 17.9432 6.78845C17.7947 3.62875 16.0989 1.71254 12.7112 1.55654ZM15.3324 16.8353C14.1977 17.97 12.6234 17.8688 8.98142 17.8688C5.23142 17.8688 3.72767 17.9243 2.63042 16.824C1.36667 15.5663 1.59542 13.5466 1.59542 10.4844C1.59542 6.3407 1.17017 3.35651 5.32892 3.14351C6.28442 3.10976 6.56567 3.09851 8.97092 3.09851L9.00467 3.12101C13.0014 3.12101 16.1372 2.70252 16.3254 6.86045C16.3682 7.80918 16.3779 8.09417 16.3779 10.4956C16.3772 14.2021 16.4477 15.7148 15.3324 16.8353Z"/>
+                                    <path d="M13.8044 6.7754C14.4004 6.7754 14.8836 6.29221 14.8836 5.69617C14.8836 5.10013 14.4004 4.61694 13.8044 4.61694C13.2083 4.61694 12.7251 5.10013 12.7251 5.69617C12.7251 6.29221 13.2083 6.7754 13.8044 6.7754Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="social-link-footer">
+                                <svg width="22" height="16" viewBox="0 0 22 16" fill="#8D8D8D"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.256 9.17485C17.9003 8.61485 18.0021 8.36572 18.256 7.86515C18.2606 7.85943 21.1967 2.80115 21.4993 1.08572L21.5011 1.08457C21.6514 0.459428 21.5011 0 20.7742 0H18.3688C17.7564 0 17.4741 0.394285 17.3228 0.835433C17.3228 0.835433 16.0981 4.49028 14.3655 6.85943C13.8064 7.544 13.5478 7.76343 13.2426 7.76343C13.0923 7.76343 12.8585 7.544 12.8585 6.91885V1.08457C12.8585 0.334857 12.687 0 12.1801 0H8.39786C8.01377 0 7.78551 0.349715 7.78551 0.675428C7.78551 1.38628 8.65179 1.54972 8.74163 3.54972V7.88915C8.74163 8.84 8.6032 9.01485 8.29611 9.01485C7.47841 9.01485 5.49376 5.34515 4.31764 1.14515C4.08022 0.330285 3.84829 0.00114328 3.23136 0.00114328H0.825028C0.138421 0.00114328 0 0.395428 0 0.836567C0 1.616 0.817694 5.49143 3.80246 10.6114C5.79169 14.1063 8.59312 16 11.1415 16C12.6734 16 12.8604 15.5795 12.8604 14.856C12.8604 11.5166 12.7219 11.2012 13.4892 11.2012C13.8449 11.2012 14.4572 11.4206 15.8872 13.1063C17.5217 15.1052 17.7903 16 18.7052 16H21.1106C21.7963 16 22.1438 15.5795 21.9439 14.7497C21.4864 13.0046 18.3953 9.41485 18.256 9.17485Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="social-link-footer">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="#8D8D8D"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M14.6324 2.4891C13.0222 0.884833 10.881 0.000940737 8.59975 0C3.89908 0 0.0734249 3.80725 0.0715342 8.48668C0.0709039 9.98252 0.463554 11.4428 1.20988 12.7299L0 17.1279L4.52094 15.9476C5.76664 16.6239 7.16907 16.9803 8.59628 16.9806H8.59985C13.3 16.9806 17.1261 13.1731 17.1279 8.49347C17.1288 6.22557 16.2425 4.09327 14.6324 2.4891ZM8.59975 15.5474H8.59681C7.32495 15.5468 6.07757 15.2066 4.98912 14.564L4.73039 14.4111L2.04759 15.1115L2.76367 12.5083L2.59508 12.2414C1.88552 11.1182 1.51083 9.82004 1.51146 8.4872C1.51293 4.59778 4.69279 1.43345 8.60259 1.43345C10.4959 1.43408 12.2756 2.16879 13.6139 3.5022C14.9521 4.83561 15.6887 6.60798 15.688 8.49295C15.6863 12.3827 12.5067 15.5474 8.59975 15.5474ZM12.4878 10.264C12.2748 10.1578 11.2271 9.64487 11.0317 9.57401C10.8366 9.50324 10.6943 9.468 10.5524 9.68021C10.4103 9.89242 10.0019 10.3702 9.87764 10.5116C9.75325 10.6532 9.62905 10.671 9.41593 10.5648C9.2028 10.4586 8.51624 10.2346 7.70227 9.51215C7.06886 8.94979 6.64122 8.25533 6.51685 8.04311C6.39269 7.83068 6.5158 7.72698 6.61034 7.61031C6.84101 7.32523 7.07201 7.02636 7.14302 6.88491C7.21413 6.74336 7.17852 6.61948 7.12516 6.51338C7.07201 6.40727 6.64585 5.36343 6.46833 4.93869C6.29522 4.52533 6.11969 4.58116 5.98881 4.57468C5.86465 4.56851 5.72252 4.56725 5.5804 4.56725C5.43838 4.56725 5.20749 4.62026 5.01212 4.83268C4.81685 5.045 4.26642 5.55798 4.26642 6.60181C4.26642 7.64565 5.02998 8.65404 5.13649 8.79559C5.243 8.93714 6.63913 11.0792 8.77664 11.9977C9.28504 12.2163 9.68192 12.3467 9.99142 12.4444C10.502 12.6059 10.9664 12.583 11.3336 12.5285C11.743 12.4676 12.5942 12.0155 12.7719 11.5201C12.9495 11.0247 12.9495 10.6002 12.8961 10.5116C12.843 10.4231 12.7008 10.3702 12.4878 10.264Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="social-link-footer">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="#8D8D8D"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.45545 11.6587L7.14115 16.3254C7.59083 16.3254 7.78558 16.1215 8.01913 15.8765L10.1274 13.7497L14.4959 17.1268C15.2972 17.5981 15.8616 17.3498 16.0777 16.3488L18.9452 2.16505L18.9459 2.16422C19.2001 0.913992 18.5177 0.425102 17.737 0.731808L0.882079 7.54369C-0.268241 8.01502 -0.250824 8.69194 0.686532 8.99865L4.99568 10.4135L15.0049 3.80221C15.476 3.47293 15.9043 3.65512 15.552 3.98439L7.45545 11.6587Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="social-link-footer">
+                                <svg width="19" height="20" viewBox="0 0 19 20" fill="#8D8D8D"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.7161 12.671C19.269 8.00486 18.4504 5.05903 16.9738 3.72664L16.9747 3.72586C14.5914 1.45049 6.5429 1.11371 3.69171 3.82806C2.4113 5.15581 1.96029 7.10447 1.91087 9.51688C1.86144 11.93 1.80275 16.4506 6.00464 17.677H6.0085L6.00464 19.5497C6.00464 19.5497 5.97607 20.3084 6.4595 20.461C7.01244 20.6406 7.26266 20.2883 8.9825 18.229C11.8584 18.479 14.0671 17.9061 14.3181 17.8225C14.8988 17.6274 18.1848 17.1915 18.7161 12.671ZM9.26591 16.9113C9.26591 16.9113 7.44569 19.1866 6.87961 19.7774C6.69427 19.9694 6.49117 19.9515 6.49426 19.5706C6.49426 19.3206 6.50815 16.4615 6.50815 16.4615C2.9457 15.4379 3.15576 11.5886 3.19437 9.57495C3.23298 7.56047 3.60058 5.91065 4.68484 4.79968C7.18621 2.44843 14.2424 2.97412 16.0402 4.66806C18.2381 6.62137 17.4558 12.1398 17.4604 12.328C17.0086 16.1015 14.3459 16.3407 13.8562 16.504C13.6469 16.5737 11.7048 17.0746 9.26591 16.9113Z"
+                                    />
+                                    <path d="M10.2733 5.24176C9.97596 5.24176 9.97596 5.70628 10.2733 5.71015C12.58 5.72796 14.4798 7.33985 14.5007 10.2965C14.5007 10.6085 14.9563 10.6046 14.9524 10.2926H14.9516C14.9269 7.10681 12.8526 5.25957 10.2733 5.24176Z"
+                                    />
+                                    <path d="M13.3075 9.80637C13.3005 10.1145 13.7554 10.1292 13.7593 9.81722C13.7971 8.06055 12.7167 6.61358 10.6864 6.46106C10.3891 6.43938 10.3582 6.90777 10.6548 6.92945C12.4155 7.06339 13.343 8.26804 13.3075 9.80637Z"
+                                    />
+                                    <path d="M12.8212 11.8045C12.4396 11.5832 12.0513 11.7209 11.8906 11.9385L11.5546 12.3744C11.384 12.5958 11.0651 12.5664 11.0651 12.5664C8.73744 11.9494 8.115 9.50754 8.115 9.50754C8.115 9.50754 8.08642 9.17696 8.29957 8.99966L8.71968 8.65127C8.92974 8.48404 9.06257 8.08146 8.84865 7.68584C8.27717 6.65074 7.89336 6.29383 7.69797 6.01977C7.49255 5.76196 7.18364 5.7039 6.86238 5.87809H6.85543C6.18742 6.26983 5.45608 7.003 5.69009 7.75784C6.08934 8.55373 6.82299 11.0907 9.16142 13.0077C10.2603 13.9143 11.9995 14.8433 12.7377 15.0578L12.7447 15.0686C13.4722 15.3117 14.1796 14.5499 14.5572 13.8601V13.8546C14.7248 13.521 14.6692 13.2051 14.4244 12.9985C13.9904 12.5742 13.3355 12.1058 12.8212 11.8045Z"
+                                    />
+                                    <path d="M11.0043 8.18904C11.7464 8.2324 12.1063 8.62105 12.1448 9.41925C12.1587 9.73125 12.6105 9.70957 12.5967 9.39757C12.5472 8.3555 12.0051 7.77484 11.029 7.72065C10.7316 7.70284 10.7038 8.17124 11.0043 8.18904Z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-politics">© 2021 Все права защищены</span>
+                <span class="footer-politics">Политика конфиденциальности</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>>

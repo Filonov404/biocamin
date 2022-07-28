@@ -8,6 +8,7 @@
 @import "news.css";
 @import "breadcrumbs.css";
 @import "listing.css";
+@import "card.css";
 
 *,
 *::before,
@@ -26,6 +27,16 @@ button {
     cursor: pointer;
     color: inherit;
     padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 4px; /* ширина для вертикального скролла */
+    height: 4px; /* высота для горизонтального скролла */
+    background-color: #F1F1F1;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #FF5710;
+    border-radius: 9em;
 }
 
 body {
@@ -675,14 +686,16 @@ body {
     position: relative;
 }
 
-#decor-nums:first-child::after {
+.decor-nums:first-child::after {
     position: absolute;
     content: '';
     width: 30px;
     height: 30px;
-    left: 39.5%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     bottom: -15px;
-    background-color: #222222;
+    background-color: #ffffff;
     z-index: 1;
 
 }
@@ -1780,7 +1793,7 @@ body {
     }
 
     .footer {
-        padding: 46px 10px 117px;
+        padding: 46px 10px 5px;
     }
 
     .footer-logo {
