@@ -29,16 +29,6 @@ button {
     padding: 0;
 }
 
-::-webkit-scrollbar {
-    width: 4px; /* ширина для вертикального скролла */
-    height: 4px; /* высота для горизонтального скролла */
-    background-color: #F1F1F1;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #FF5710;
-    border-radius: 9em;
-}
-
 body {
     color: #fff;
     font-family: 'Inter', sans-serif;

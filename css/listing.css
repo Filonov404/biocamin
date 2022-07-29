@@ -1,3 +1,7 @@
+.listing {
+    overflow: hidden;
+}
+
 .listing-wrapper {
     margin-top: 74px;
     padding: 0 10px;
@@ -48,6 +52,7 @@
     margin-right: 10px;
     padding: 20px 34px;
     border: 1px solid #C8C8C8;
+    flex-shrink: 0;
 }
 
 .listing-item-category {
@@ -234,6 +239,11 @@
     margin: 0 35px;
 }
 
+.pagination-item:hover {
+    color: #FF5710;
+    transition: all .3s ease-in-out;
+}
+
 .pagination-item.current {
     width: 30px;
     height: 30px;
@@ -346,6 +356,21 @@
 
     .card-price-new {
         font-size: 17px;
+    }
+
+    .listing-wrapper {
+        margin-top: 16px;
+        padding: 0 10px;
+    }
+    .listing-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .listing-decor {
+        display: none;
+    }
+    .listing-scroll-decor {
+        display: none;
     }
 }
 

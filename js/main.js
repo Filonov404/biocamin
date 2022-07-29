@@ -120,12 +120,17 @@ $(".footer-title").on("click", function () {
     $(this).toggleClass("active");
 });
 
+//слайдер в карточке товаров
+
 var bigSlides = new Swiper(".bigSlides-slider-wrapper", {
     height: 497,
     spaceBetween: 12,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+    scrollbar: {
+        el: ".progress-bar-video",
+    },
 });
 new Swiper(".thumbs-slider-wrapper", {
     slidesPerView: 2,
@@ -135,10 +140,30 @@ new Swiper(".thumbs-slider-wrapper", {
         nextEl: ".arrow-next-bigSlides",
         prevEl: ".arrow-prev-bigSlides",
     },
+
     thumbs: {
         swiper: bigSlides,
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        340: {
+            slidesPerView: 1.1,
+            freeMode: true,
+        },
+        550: {
+            slidesPerView: 1.2,
+            freeMode: true,
+        },
+        960: {
+            slidesPerView: 2,
+            height:450,
+        },
+    },
 });
+
+//табы в карточке товаров
 
 $(".slider-tabs").each(function () {
     let ths = $(this);
@@ -161,6 +186,8 @@ $(".slider-tabs").each(function () {
         .addClass("active");
 });
 
+//популярные биокамины
+
 new Swiper(".popular-bioflares-inner", {
     loop: true,
     slidesPerView: 4,
@@ -170,11 +197,12 @@ new Swiper(".popular-bioflares-inner", {
             slidesPerView: 1,
         },
         550: {
-            slidesPerView: 2,
+            height: 400,
+            slidesPerView: 1,
             freeMode: true,
         },
         860: {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
     },
     scrollbar: {
