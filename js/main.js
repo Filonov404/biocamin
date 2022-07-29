@@ -216,8 +216,10 @@ new Swiper(".popular-bioflares-inner", {
     },
 })
 
+// обертка для указания процента скидки <div class="circle_percent" data-percent="30">
+
 $(".circle_percent").each(function() {
-    var $this = $(this),
+    let $this = $(this),
         $dataV = $this.data("percent"),
         $dataDeg = $dataV * 3.6,
         $round = $this.find(".round_per");
@@ -240,4 +242,29 @@ $(".circle_percent").each(function() {
             $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
         },1000);
     }
+});
+
+
+$('.ripple-effect').on('mouseenter', function(e) {
+
+    let presentOfset = $(this).offset(),
+        relX = e.pageX - presentOfset.left,
+        relY = e.pageY - presentOfset.top;
+
+
+    $(this).find('span').css({
+        top: relY,
+        left: relX,
+    });
+});
+$('.ripple-effect').on('mouseout', function(e) {
+
+    let presentOfset = $(this).offset(),
+        relX = e.pageX - presentOfset.left,
+        relY = e.pageY - presentOfset.top;
+
+    $(this).find('span').css({
+        top: relY,
+        left: relX,
+    });
 });

@@ -558,17 +558,119 @@ body {
     bottom: 19px;
 }
 
-.slier-main-btn {
-    padding: 21px 16px;
-    background-color: #2B2B2B;
-    color: white;
-    border-radius: 8px;
-    width: 67%;
+.btn-wraper {
+    width: 80%;
 }
 
-.slier-main-btn:hover {
+.btn-wraper-test {
+    width: 80%;
+    align-self: start;
+    margin-top: 37px;
+}
+
+.btn-wraper-call {
+    margin-top: 30px;
+}
+
+.btn-wraper .ripple-effect {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 42px;
+    background-color: #2B2B2B;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-wraper-test .ripple-effect {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 10px;
+    background-color: #fff;
+    color: #2b2b2b;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-wraper-call .ripple-effect {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 67px;
+    background-color: #2B2B2B;
+    color: #FF5710;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-wraper .ripple-effect span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
     background-color: #FF5710;
-    transition: all .3s ease;
+    transition: all .4s ease;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.btn-wraper-test .ripple-effect span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #2B2B2B;
+    transition: all .4s ease;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.btn-wraper-call .ripple-effect span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #FF5710;
+    transition: all .4s ease;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.btn-wraper .ripple-effect:hover span,
+.btn-wraper-test .ripple-effect:hover span,
+.btn-wraper-call .ripple-effect:hover span{
+    width: 200%;
+    height: 500px;
+}
+
+.btn-wraper-test .ripple-effect:hover {
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.btn-wraper-call .ripple-effect:hover {
+    color: white;
+    transition: all .3s ease-in-out;
 }
 
 .main-test {
