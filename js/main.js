@@ -198,7 +198,7 @@ new Swiper(".popular-bioflares-inner", {
         },
         550: {
             height: 400,
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             freeMode: true,
         },
         860: {
