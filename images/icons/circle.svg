@@ -1,0 +1,4 @@
+<svg class="progress" width="72" height="72" viewport="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle r="30" cx="36" cy="36" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0" ></circle>
+    <circle class="bar" r="30" cx="36" cy="36" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0"></circle>
+</svg>
