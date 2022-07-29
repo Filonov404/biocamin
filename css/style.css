@@ -559,11 +559,10 @@ body {
 }
 
 .btn-wraper {
-    width: 80%;
+    width: 100%;
 }
 
 .btn-wraper-test {
-    width: 80%;
     align-self: start;
     margin-top: 37px;
 }
@@ -577,7 +576,8 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 17px 42px;
+    width: 215px;
+    height: 60px;
     background-color: #2B2B2B;
     color: #fff;
     border-radius: 8px;
@@ -592,8 +592,9 @@ body {
     position: relative;
     display: inline-flex;
     justify-content: center;
+    width: 170px;
+    height: 60px;
     align-items: center;
-    padding: 18px 10px;
     background-color: #fff;
     color: #2b2b2b;
     border-radius: 8px;
@@ -1263,11 +1264,11 @@ body {
     }
 
     .slide-content {
-        padding: 90px 60px 60px 60px;
+        padding: 60px 60px 60px 60px;
     }
 
     .top-pagination {
-        top: -70%;
+        top: -72%;
         margin-left: 63px;
     }
 
@@ -1298,7 +1299,7 @@ body {
     }
 
     .content-test-wrapper {
-        margin-bottom: 20px;
+        margin-bottom: 48px;
     }
 
     .nums {
@@ -1343,9 +1344,6 @@ body {
         font-size: 29px;
     }
 
-    /*.footer-links {*/
-    /*    order: -1;*/
-    /*}*/
 }
 
 @media (max-width: 960px) {
@@ -1973,6 +1971,28 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .btn-wraper .ripple-effect {
+        background-color: #fff;
+        color: #2B2B2B;
+    }
+
+    .btn-wraper .ripple-effect span {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background-color: #2B2B2B;
+        transition: all .4s ease;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    .btn-wraper .ripple-effect:hover {
+        color: white;
+        transition: all .3s ease-in-out;
     }
 
     .slier-main-btn {
