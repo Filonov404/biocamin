@@ -26,6 +26,14 @@
     background-color: #fff;
 }
 
+.progress-bar-card {
+    position: absolute;
+    bottom: -91px;
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: #ccc;
+}
+
 .card-content-slider::after {
     position: absolute;
     content: '';
@@ -352,7 +360,7 @@
 
 .popular-bioflares {
     background-color: #FAFAFA;
-    padding: 100px 0 124px;
+    padding: 100px 10px 124px;
 }
 
 .popular-bioflares-wrapper {
@@ -1000,6 +1008,15 @@
 
     .review-photo img {
         width: 100%;
+    }
+    .popular-bioflares {
+        background-color: #FAFAFA;
+        padding: 32px 10px 32px;
+    }
+
+    .popular-bioflares-title {
+        font-size: 22px;
+        line-height: 25px;
     }
 }
 

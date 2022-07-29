@@ -123,16 +123,18 @@ $(".footer-title").on("click", function () {
 //слайдер в карточке товаров
 
 var bigSlides = new Swiper(".bigSlides-slider-wrapper", {
+
     height: 497,
     spaceBetween: 12,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
     scrollbar: {
-        el: ".progress-bar-video",
+        el: ".progress-bar-card",
     },
 });
 new Swiper(".thumbs-slider-wrapper", {
+    loop: true,
     slidesPerView: 2,
     height: 115,
     spaceBetween: 12,
@@ -190,23 +192,26 @@ $(".slider-tabs").each(function () {
 
 new Swiper(".popular-bioflares-inner", {
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: "auto",
     spaceBetween: 4,
     breakpoints: {
         0: {
             slidesPerView: 1,
         },
+        360: {
+            height: 400,
+            slidesPerView: 1.1,
+        },
         550: {
             height: 400,
             slidesPerView: 1.2,
-            freeMode: true,
         },
         860: {
             slidesPerView: 2,
         },
     },
     scrollbar: {
-        el: ".progress-bar-video",
+        el: ".progress-bar-card",
         hide: false,
     },
 })
