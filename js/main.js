@@ -45,10 +45,10 @@ new Swiper(".sliders-items-inner", {
     spaceBetween: 1,
     breakpoints: {
         0: {
-            slidesPerView: 1,
+            slidesPerView: 1.2,
         },
-        550: {
-            slidesPerView: 2,
+        430: {
+            slidesPerView: 1.2,
             freeMode: true,
         },
         860: {
@@ -57,7 +57,6 @@ new Swiper(".sliders-items-inner", {
     },
     scrollbar: {
         el: ".progress-bar",
-        hide: false,
     },
     navigation: {
         nextEl: ".arrow-next-bioflares",
@@ -73,6 +72,19 @@ new Swiper(".video-review-slider", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 12,
+    breakpoints: {
+        0: {
+            slidesPerView: 1.2,
+        },
+        430: {
+            slidesPerView: 1.2,
+            freeMode: true,
+        },
+        1200: {
+            slidesPerView: 1,
+            freeMode: true,
+        },
+    },
     scrollbar: {
         el: ".progress-bar-video",
         hide: false,
@@ -93,7 +105,7 @@ new Swiper(".our-works-slider", {
     spaceBetween: 35,
     slideActiveClass: 'activ-slide',
     scrollbar: {
-        el: ".progress-bar-video",
+        el: ".progress-bar-works",
     },
     navigation: {
         nextEl: ".arrow-next-video",
@@ -109,7 +121,7 @@ new Swiper(".news-slider-wrapper", {
     spaceBetween: 1,
     slideActiveClass: 'activ-slide',
     scrollbar: {
-        el: ".progress-bar-works",
+        el: ".progress-bar-news",
     },
 })
 
@@ -244,27 +256,90 @@ $(".circle_percent").each(function() {
     }
 });
 
+//эффект при наведении на кнопки
 
 $('.ripple-effect').on('mouseenter', function(e) {
-
     let presentOfset = $(this).offset(),
         relX = e.pageX - presentOfset.left,
         relY = e.pageY - presentOfset.top;
-
-
     $(this).find('span').css({
         top: relY,
         left: relX,
     });
 });
 $('.ripple-effect').on('mouseout', function(e) {
-
     let presentOfset = $(this).offset(),
         relX = e.pageX - presentOfset.left,
         relY = e.pageY - presentOfset.top;
-
     $(this).find('span').css({
         top: relY,
         left: relX,
     });
 });
+
+
+//добавление классов при смене разрешения на странице новости
+
+function myFunction(x) {
+    if (x.matches) {
+        $('.articles-inner').addClass("slider");
+    } else {
+        $('.articles-inner').removeClass("slider");
+    }
+}
+
+const mmObj = window.matchMedia("(max-width: 768px)");
+myFunction(mmObj);
+
+// слайдер на странице новости
+
+new Swiper(".articles-inner.slider", {
+    loop: true,
+    spaceBetween: 30,
+    scrollbar: {
+        el: ".progress-bar-card",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        360: {
+            spaceBetween: 20,
+            slidesPerView: 1.25,
+        },
+        550: {
+            slidesPerView: 1.3,
+        }
+    }
+})
+
+// слайдер на странице о нас, отзывы
+
+new Swiper(".review-slider-inner", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 14,
+    scrollbar: {
+        el: ".progress-bar-review",
+    },
+    navigation: {
+        nextEl: ".arrow-next-review",
+        prevEl: ".arrow-prev-review",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        360: {
+            slidesPerView: 1.2,
+        },
+        550: {
+            spaceBetween: 11,
+            slidesPerView: 1.2,
+        },
+        960: {
+            slidesPerView: 2,
+        }
+
+    }
+})

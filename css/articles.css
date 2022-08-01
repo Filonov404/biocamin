@@ -1,0 +1,43 @@
+.art-title {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #fff;
+}
+
+.art-decor {
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 1px;
+    background: #3E3E3E;
+    margin: 0 10px;
+}
+
+.art-wrapper-title {
+    padding-top: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 54px;
+}
+
+.news-item::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/news-slider/news1.jpg);
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    filter: brightness(3) grayscale(1) contrast(1);
+}
+
+.art-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+}

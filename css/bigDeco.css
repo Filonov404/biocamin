@@ -115,10 +115,10 @@
     position: relative;
     max-width: 568px;
     display: flex;
-    background-color: #e5e5e5;
     flex-direction: column;
     padding: 151px 219px 123px 133px;
     z-index: 2;
+    background-color: #fff;
 }
 
 .fire-content::after {
@@ -173,7 +173,6 @@
     .fire-content {
         position: relative;
         display: flex;
-        background-color: #e5e5e5;
         flex-direction: column;
         padding: 114px 205px 112px 101px;
         z-index: 2;
@@ -272,7 +271,9 @@
 }
 
 @media (max-width: 550px) {
-
+    .fire-content::after {
+        background-image: url(../images/main/big-img.jpg);
+    }
     .big-item-wrap::after {
         background-position: 185% top;
         background-size: 90%;

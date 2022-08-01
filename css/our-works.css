@@ -95,7 +95,22 @@
     background-color: #ccc;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
+    .works-subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #232427;
+    }
+    .our-works-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4D4F57;
+    }
+}
+
+    @media (max-width: 360px) {
     .wrap-arrows {
         display: none;
     }

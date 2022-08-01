@@ -1,5 +1,5 @@
 .breadcrumbs-inner {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .breadcrumbs-inner {
@@ -38,6 +38,6 @@
 
 @media (max-width: 360px) {
     .breadcrumbs-inner {
-        margin-top: 34px;
+        padding-top: 34px;
     }
 }
