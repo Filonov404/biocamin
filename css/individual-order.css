@@ -1,0 +1,327 @@
+.individual-top {
+    height: 764px;
+    background-image: url(../images/main/individual-form-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 133px 10px 133px;
+}
+
+.individual-form {
+    max-width: 735px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.individual-input {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 20px;
+    display: block;
+}
+
+.individual-input::placeholder {
+    color: #fff;
+}
+
+.individual-form-wrap p {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.individual-form-wrap span {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 150%;
+    color: #EFEFEF;
+}
+
+.form-wrap-flex {
+    margin-top: 46px;
+    display: grid;
+    grid-template-columns: 228px 285px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.individual-security-form {
+    margin-left: 20px;
+    grid-column: 2 / 3;
+}
+
+.individual-input {
+    max-width: 228px;
+}
+
+.btn-wraper-form {
+    max-width: 285px;
+}
+
+.individual-security-form b {
+    position: relative;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 133.7%;
+    color: #555555;
+}
+
+.individual-security-form a {
+    color: #555555;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 133.7%;
+    text-decoration: underline;
+    transition: all .3s ease-in-out;
+}
+
+.individual-security-form a:hover {
+    color: white;
+}
+
+.individual-security-form b::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 18px;
+    background-image: url(../images/icons/user-security.svg);
+    background-repeat: no-repeat;
+    left: -18px;
+    bottom: -5px;
+}
+
+.btn-wraper-individual .ripple-effect {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #FF5710;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-wraper-individual .ripple-effect span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all .4s ease;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.btn-wraper-individual b {
+    transition: all .3s ease-in-out;
+}
+
+.btn-wraper-individual .ripple-effect:hover span {
+    width: 150%;
+    height: 500px;
+}
+.btn-wraper-individual .ripple-effect:hover {
+    color: #222222;
+}
+
+.why {
+    position: relative;
+    padding: 98px 0 160px;
+    overflow: hidden;
+    background-color: #222222;
+}
+
+.why-wrapper {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.why::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #151515;
+    top: 207px;
+}
+
+.why::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #151515;
+    bottom: 159px;
+}
+
+.why-subtitle {
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #FFFFFF;
+    z-index: 2;
+    margin-bottom: 61px;
+    display: block;
+}
+
+.why-wrapper li:first-child:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100vh;
+    bottom: -50%;
+    left: 0;
+    background-color: #FF5710;
+    z-index: -1;
+}
+
+.why-wrapper li:first-child {
+    color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.why-wrapper li span {
+    display: block;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 58px;
+    color: #474747;
+    margin-bottom: 28px;
+}
+
+.why-wrapper li:first-child span {
+    color: white;
+}
+
+.why-wrapper li {
+    border: 1px solid #151515;
+    padding: 81px 49px;
+}
+
+.who-middle li p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1200px) {
+    .why {
+        padding: 98px 10px 160px;
+    }
+    .why-wrapper {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .form-wrap-flex {
+        padding: 0 34px;
+        margin-top: 46px;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .individual-security-form {
+        margin-top: 18px;
+        grid-column: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .individual-input {
+        max-width: inherit;
+    }
+    .individual-form-wrap p {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 14px;
+    }
+    .individual-form-wrap span {
+        display: block;
+        font-size: 16px;
+        line-height: 145%;
+        text-align: center;
+        color: #FFF;
+        margin-bottom: 14px;
+    }
+    .individual-top {
+        height: 532px;
+        background-image: url(../images/main/individual-form-bg.png);
+        background-size: cover;
+        background-position: center;
+        padding: 50px 10px 23px;
+    }
+    .why-wrapper {
+        height: inherit;
+        overflow: hidden;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 20px;
+    }
+    .why::before,
+    .why::after,
+    .why-wrapper li:first-child:after {
+        display: none;
+    }
+    .why-wrapper li {
+        border: 1px solid #474747;
+        border-radius: 8px;
+        padding: 12px;
+    }
+    .why-subtitle {
+        font-size: 140%;
+        line-height: 34px;
+    }
+    .why {
+        padding: 66px 10px 66px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .individual-top {
+        height: 544px;
+        background-image: url(../images/main/individual-form-bg.png);
+        background-size: cover;
+        background-position: center;
+        padding: 50px 10px 23px;
+    }
+}
+
+@media (max-width: 360px) {
+    .individual-form-wrap p {
+        font-size: 22px;
+    }
+    .individual-form-wrap span {
+        font-size: 14px;
+    }
+}
