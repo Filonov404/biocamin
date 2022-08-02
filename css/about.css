@@ -321,7 +321,7 @@
 .manager-form-wrap p {
     font-weight: 700;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 156%;
     color: #FFFFFF;
     display: block;
     margin-bottom: 14px;
@@ -330,7 +330,7 @@
 .manager-form-wrap span {
     font-weight: 600;
     font-size: 13px;
-    line-height: 22px;
+    line-height: 169%;
     color: #FFFFFF;
     display: block;
     margin-bottom: 35px;
@@ -1030,6 +1030,9 @@
         font-size: 14px;
         line-height: 22px;
     }
+    .who-bottom-bg {
+        background-position: center -54px;
+    }
 }
 
 @media (max-width: 434px) {
@@ -1047,7 +1050,7 @@
         width: 335px;
         background-repeat: no-repeat;
         height: 498px;
-        top: -87%;
+        top: -83%;
         left: 20%;
         z-index: 2;
     }
