@@ -552,7 +552,6 @@
 }
 
 .about-form {
-    overflow: hidden;
     background: #F8F8F8;
 }
 
@@ -680,13 +679,13 @@
 .body-form::after {
     position: absolute;
     content: '';
-    left: -183%;
-    top: -10px;
+    left: -181%;
+    top: 0;
     background-image: url(../images/main/about-form-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 211%;
-    height: 106%;
+    width: 199%;
+    height: 100%;
 }
 
 @media (max-width: 1400px) {

@@ -343,3 +343,21 @@ new Swiper(".review-slider-inner", {
 
     }
 })
+
+// Вызов модального окна
+$('.btn-wraper-test').click( function() {
+    $('.overlay').fadeIn();
+});
+
+// Закрытие окна на крестик
+$('.close-popup').click( function() {
+    $('.overlay').fadeOut();
+});
+
+// Закрытие окна на поле
+$(document).mouseup( function (e) {
+    let popup = $('.popup');
+    if (e.target !== popup[0] && popup.has(e.target).length === 0){
+        $('.overlay').fadeOut();
+    }
+});

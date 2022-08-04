@@ -1,0 +1,534 @@
+
+/* обратный звонок */
+
+.modal-callback {
+    width: 480px;
+    position: relative;
+}
+
+@media (max-width: 550px) {
+    .modal-callback {
+        width: 320px;
+    }
+    .popup {
+        padding: 36px;
+    }
+    .popup.designer {
+        padding: 36px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #222;
+    z-index: 9;
+}
+
+.popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 54px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #222222;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.close-popup:before {
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    height: 1px;
+    width: 20px;
+    top: 11px;
+    left: -4px;
+    transform: rotate(-45deg);
+}
+
+.close-popup:after {
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    height: 1px;
+    width: 20px;
+    top: 11px;
+    transform: rotate(45deg);
+    left: -4px;
+}
+
+.callback p {
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #232427;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.callback span {
+    font-family: 'SF UI Display',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #232427;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.callback-user-security {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.callback-user-security b {
+    position: relative;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 133.7%;
+    color: #555555;
+}
+.callback-user-security a {
+    color: #555555;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 133.7%;
+    transition: all .3s ease-in-out;
+}
+.callback-user-security a:hover {
+    color: #9A9A9A;
+    text-decoration: underline;
+}
+
+.callback-user-security b::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 18px;
+    background-image: url(../images/icons/user-security.svg);
+    background-repeat: no-repeat;
+    left: -18px;
+    bottom: -5px;
+}
+
+.btn-wraper-callback .ripple-effect {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #FF5710;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.btn-wraper-callback .ripple-effect span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #222;
+    transition: all .4s ease;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.btn-wraper-callback .ripple-effect:hover span {
+    width: 150%;
+    height: 500px;
+}
+
+.btn-wraper-callback .ripple-effect:hover {
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+/*купить в один клик*/
+
+
+.by-onclick {
+    width: 480px;
+    position: relative;
+}
+
+.by-onclick p {
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #232427;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+    .modal-by-onclick {
+        width: 320px;
+    }
+}
+
+/* отзыв */
+
+.modal-rew-wrap {
+    width: 762px;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows: 1fr 20% 20% 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.manager-input1,
+.manager-input2,
+.manager-input3,
+.manager-input4,
+.manager-input5{
+    color: #717171;
+    background-color: transparent;
+    border: 1px solid #717171;
+    border-radius: 8px;
+    padding: 20px;
+    display: block;
+    width: 100%;
+}
+
+.modal-review-wrap p {
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 136%;
+    color: #232427;
+    margin-bottom: 22px;
+    display: block;
+}
+
+.btn-wraper-callback {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.callback-user-security {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+.file-upload {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FF5710;
+    margin-left: 33px;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    padding-top: 20px;
+}
+
+.file-upload::after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    left: -18px;
+    top: 25px;
+    background-image: url(../images/icons/upload.svg);
+    background-repeat: no-repeat;
+}
+
+.manager-input5 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.manager-input3 {
+    grid-row: 2 / 4;
+}
+
+@media (max-width: 960px) {
+    .modal-rew-wrap {
+        width: 320px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 16% 16% 16% 1fr 1fr 1fr;
+        grid-gap: 8px;
+    }
+    .manager-input3 {
+        grid-row: 3 / 4;
+    }
+    .manager-input2 {
+        grid-row: 2 / 3;
+    }
+    .manager-input5 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    .manager-input4 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    .callback-user-security {
+        grid-row: 8 / 9;
+    }
+    .btn-wraper-callback {
+        grid-row: 7 / 8;
+    }
+    .file-upload {
+        display: block;
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        color: #FF5710;
+        margin-left: 33px;
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+        padding: 7px 0 7px;
+    }
+    .file-upload::after {
+        top: 11px;
+    }
+}
+
+/* Специальные условия для дизайнеров */
+
+.popup.designer {
+    overflow: hidden;
+}
+
+.modal-designer-wrapper {
+    width: 900px;
+    position: relative;
+}
+
+.modal-designer-inner {
+    display: flex;
+    justify-content: end;
+}
+
+.modal-designer-wrapper::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/main/modal-designer.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 27px;
+    top: -58px;
+    width: 106%;
+    height: 124%;
+}
+
+.modal-designer-wrapper > .close-popup {
+    position: absolute;
+    top: -27px;
+    right: -30px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .modal-designer-wrapper::after {
+        display: none;
+    }
+    .modal-designer-wrapper {
+        width: inherit;
+    }
+}
+
+@media (max-width: 750px) {
+    .modal-designer-wrapper {
+        width: 230px;
+    }
+}
+
+/* Подобрать биокамин */
+
+.modal-wrap-pickUp {
+    display: grid;
+    width: 762px;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows: repeat(4 ,1fr);
+    grid-gap: 20px;
+}
+
+.pickUp-input1,
+.pickUp-input2,
+.pickUp-input3,
+.pickUp-input4,
+.pickUp-input5 {
+    color: #717171;
+    background-color: transparent;
+    border: 1px solid #717171;
+    border-radius: 8px;
+    padding: 20px;
+    display: block;
+    width: 100%;
+}
+
+.pickUp-input4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+.btn-wraper-pickUp .ripple-effect {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #FF5710;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.btn-wraper-pickUp .ripple-effect span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #222;
+    transition: all .4s ease;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.btn-wraper-pickUp .ripple-effect:hover span {
+    width: 150%;
+    height: 500px;
+}
+
+.btn-wraper-pickUp .ripple-effect:hover {
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.btn-wraper-pickUp {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.pickUp-user-security {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pickUp-user-security b {
+    position: relative;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 133.7%;
+    color: #555555;
+}
+.pickUp-user-security a {
+    color: #555555;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 133.7%;
+    transition: all .3s ease-in-out;
+}
+.pickUp-user-security a:hover {
+    color: #9A9A9A;
+    text-decoration: underline;
+}
+
+.pickUp-user-security b::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 18px;
+    background-image: url(../images/icons/user-security.svg);
+    background-repeat: no-repeat;
+    left: -18px;
+    bottom: -5px;
+}
+
+.pickUp-user-security {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.pickUp-title {
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 136%;
+    color: #232427;
+    margin-bottom: 30px;
+    display: block;
+}
+
+@media (max-width: 950px) {
+    .modal-wrap-pickUp {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 17% 1fr;
+    }
+    .pickUp-user-security {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+    .pickUp-input2 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    .pickUp-input4 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    .btn-wraper-pickUp {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+    .modal-pickUp-wrap {
+        width: 228px;
+    }
+    .popup {
+        padding: 36px;
+    }
+}

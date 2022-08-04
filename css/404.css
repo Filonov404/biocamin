@@ -1,0 +1,110 @@
+.error {
+    width: 100%;
+    background-color: #222;
+    opacity: .99;
+    overflow: hidden;
+}
+
+.error-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.error-wrapper::after {
+    position: absolute;
+    content: '';
+    width: 794px;
+    height: 769px;
+    background-color: #2F2F2F;
+    border-radius: 50%;
+    left: 50%;
+    top: 103%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.error-content {
+    width: 350px;
+    margin-bottom: 28px;
+}
+
+.error-content h1 {
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    padding-top: 164px;
+}
+
+.error-content p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 136%;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 32px;
+}
+
+.btn-wraper-404 {
+    text-align: center;
+}
+
+.btn-wraper-404 .ripple-effect {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 232px;
+    height: 60px;
+    background-color: #FF5710;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-wraper-404 .ripple-effect span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all .4s ease;
+    z-index: -1;
+}
+
+.btn-wraper-404 .ripple-effect:hover span {
+    width: 150%;
+    height: 500px;
+}
+
+.btn-wraper-404 .ripple-effect:hover {
+    color: #222222;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 550px) {
+    .error-content h1 {
+        padding-top: 146px;
+        font-size: 24px;
+    }
+    .error-content p {
+        font-size: 16px;
+    }
+    .error-content {
+        width: 350px;
+        margin-bottom: 48px;
+    }
+}

@@ -13,6 +13,10 @@
 @import "articles.css";
 @import "about.css";
 @import "individual-order.css";
+@import "partners.css";
+@import "contacts.css";
+@import "404.css";
+@import "modal.css";
 
 *,
 *::before,
@@ -191,10 +195,6 @@ body {
 .social-link-footer::after:hover {
     color: white;
     transition: all .3s ease-in-out;
-}
-
-.social-link-footer {
-    position: relative;
 }
 
 .favourites {
@@ -1802,6 +1802,10 @@ body {
     .header-logo {
         max-width: 100px;
     }
+    .header {
+        background-color: #1D1D1D;
+    }
+
 
     .phone-header-mobile {
         text-align: center;
@@ -2058,6 +2062,7 @@ body {
 
 @media (max-width: 550px) {
     .header {
+        background-color: #1D1D1D;
         padding: 8px;
     }
 

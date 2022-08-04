@@ -145,12 +145,10 @@
 .why {
     position: relative;
     padding: 98px 0 160px;
-
     background-color: #222222;
 }
 
 .why-wrapper {
-    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
@@ -189,7 +187,7 @@
     position: absolute;
     content: '';
     width: 100%;
-    height: 100vh;
+    height: 100%;
     bottom: 0;
     left: 0;
     background-color: #FF5710;
@@ -593,8 +591,90 @@
     top: 14px;
 }
 
-.how-job-wrap {
+.delivery-individual {
+    padding: 66px 10px 51px;
+    background: #FAFAFA;
+    opacity: .99;
+}
 
+.delivery-individual-wrap {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.description-delivery-content img {
+    width: 100%;
+}
+
+.individual-text {
+    max-width: 385px;
+}
+
+.individual-text h3 {
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    color: #232427;
+    margin-bottom: 21px;
+}
+
+.individual-text p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8A8B90;
+    margin-bottom: 34px;
+}
+
+.individual-text b {
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 165%;
+    color: #232427;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 41px;
+}
+
+.individual-text b::before {
+    position: absolute;
+    content: '';
+    left: -22px;
+    width: 3px;
+    height: 100%;
+    background-color: #FF5710;
+}
+
+.description-individual-content {
+    max-width: 766px;
+    position: relative;
+}
+
+.description-individual-content img {
+    width: 100%;
+}
+
+.individual-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-individual-content::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/partners/country.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: -33px;
+    left: -89px;
+    z-index: -1;
 }
 
 @media (max-width: 1350px) {
@@ -647,6 +727,13 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 85px;
+    }
+    .delivery-individual-wrap {
+        width: 100%;
+        flex-direction: column;
+    }
+    .description-individual-content {
+        margin-top: 92px;
     }
 }
 
@@ -841,7 +928,7 @@
         font-size: 24px;
     }
     .how-job {
-        padding: 52px 10px 60px;
+        padding: 71px 10px 60px;
     }
     .how-job-wrap b {
         display: none;
@@ -855,6 +942,31 @@
         display: initial;
         font-size: 14px;
         color: #FF5710;
+    }
+    .description-individual-content::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 300px;
+        background-image: url(../images/partners/country.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        top: -79px;
+        left: 5px;
+        z-index: -1;
+    }
+    .individual-text h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .individual-text p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .individual-text b {
+        font-size: 14px;
+        margin-bottom: 30px;
     }
 }
 
@@ -936,6 +1048,9 @@
 @media (max-width: 450px) {
     .girl-wrap-flex::after {
         top: -90%;
+    }
+    .how-job-title {
+        margin-bottom: 24px;
     }
 }
 
